@@ -1,14 +1,14 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+// import { Nunito } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 
-const nunito = Nunito({
-  weight: ["200", "300", "400", "500", "600", "700", "800", "900", "1000"],
-  style: ["normal", "italic"],
-  subsets: ["cyrillic", "latin"],
-});
+// const nunito = Nunito({
+//   weight: ["200", "300", "400", "500", "600", "700", "800", "900", "1000"],
+//   style: ["normal", "italic"],
+//   subsets: ["cyrillic", "latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>
+      <body
+      // className={nunito.className}
+      >
         <header className="bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700 h-20 transition-all">
           <div className="container mx-auto flex justify-around items-center py-4 uppercase">
             <Link href="/">
