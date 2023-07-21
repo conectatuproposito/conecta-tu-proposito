@@ -20,7 +20,16 @@ export default function Nosotros() {
             la dimensión biológica, psicológica, social y espiritual.
           </div>
         </div>
-        <div>image</div>
+        <div>
+          <Image
+            src="/nosotros.png"
+            alt="iconos"
+            width={500}
+            height={500}
+            priority
+            className="w-full"
+          />
+        </div>
       </div>
       <div className="text-center">
         <div>
@@ -98,7 +107,16 @@ export default function Nosotros() {
             profesional, la felicidad en la vida y en el trabajo.
           </div>
         </div>
-        <div>image</div>
+        <div>
+          <Image
+            src="/personaje.png"
+            alt="iconos"
+            width={500}
+            height={500}
+            priority
+            className="w-full"
+          />
+        </div>
       </div>
     </div>
   );

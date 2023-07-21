@@ -5,40 +5,59 @@ export default function Contactate() {
     <div className="flex flex-col">
       <div className="grid grid-cols-2">
         <div>
-          <div className="mb-4">image</div>
-          <h2 className="text-2xl font-bold mb-2">Modelo de desempeño</h2>
-          <div className="mb-4">
-            Metodología desarrollada en Oxford Inglaterra por IOpener Institute,
-            que permite transformar la forma en que las organizaciones evalúan,
-            analizan y actúan con la información de desempeño de sus
-            colaboradores. Identifica factores como la contribución, la
-            convicción, la cultura, el compromiso y la capacidad, entre otros,
-            para mejorar el desempeño y alcanzar el máximo potencial de las
-            personas, logrando mejores resultados económicos y productivos en la
-            organización.
-          </div>
-          <div className="mb-4">
-            El capital humano es el activo número 1 de tu empresa, y la suma de
-            este capital es lo que permite alcanzar los resultados.
-          </div>
           <div>
-            ¿Qué estás haciendo para promover el máximo potencial, mejorar el
-            desempeño y la felicidad en el trabajo?
-          </div>
-          <div className="mt-4">
-            <button className="mr-2 bg-blue-500 text-white py-2 px-4 rounded-lg">
-              contacta ahora
-            </button>
-            <button className="bg-blue-500 text-white py-2 px-4 rounded-lg">
-              ver certificado
-            </button>
+            <h2 className="text-2xl font-bold mb-2">Modelo de desempeño</h2>
+            <div className="mb-4">
+              Metodología desarrollada en Oxford Inglaterra por IOpener
+              Institute, que permite transformar la forma en que las
+              organizaciones evalúan, analizan y actúan con la información de
+              desempeño de sus colaboradores. Identifica factores como la
+              contribución, la convicción, la cultura, el compromiso y la
+              capacidad, entre otros, para mejorar el desempeño y alcanzar el
+              máximo potencial de las personas, logrando mejores resultados
+              económicos y productivos en la organización.
+            </div>
+            <div className="mb-4">
+              El capital humano es el activo número 1 de tu empresa, y la suma
+              de este capital es lo que permite alcanzar los resultados.
+            </div>
+            <div>
+              ¿Qué estás haciendo para promover el máximo potencial, mejorar el
+              desempeño y la felicidad en el trabajo?
+            </div>
+            <div className="mt-4">
+              <button className="mr-2 bg-blue-500 text-white py-2 px-4 rounded-lg">
+                contacta ahora
+              </button>
+              <button className="bg-blue-500 text-white py-2 px-4 rounded-lg">
+                ver certificado
+              </button>
+            </div>
           </div>
         </div>
-        <div>image</div>
+        <div className="mb-4">
+          <Image
+            src="/service-1.png"
+            alt="iconos"
+            width={500}
+            height={500}
+            priority
+            className="w-full"
+          />
+        </div>
       </div>
 
       <div className="grid grid-cols-2">
-        <div>image</div>
+        <div>
+          <Image
+            src="/service-2.png"
+            alt="iconos"
+            width={500}
+            height={500}
+            priority
+            className="w-full"
+          />
+        </div>
         <div>
           <h2 className="text-2xl font-bold mt-4">
             Familia inteligentemente saludable
@@ -98,11 +117,29 @@ export default function Contactate() {
             </button>
           </div>
         </div>
-        <div>image</div>
+        <div>
+          <Image
+            src="/service-3.png"
+            alt="iconos"
+            width={500}
+            height={500}
+            priority
+            className="w-full"
+          />
+        </div>
       </div>
 
       <div className="grid grid-cols-2">
-        <div>image</div>
+        <div>
+          <Image
+            src="/service-4.png"
+            alt="iconos"
+            width={500}
+            height={500}
+            priority
+            className="w-full"
+          />
+        </div>
         <div>
           <div>Ejecutivos</div>
           <div className="mb-4">
