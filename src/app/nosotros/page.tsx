@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Nosotros() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col xl:max-w-screen-xl m-auto p-4 xl:p-0 ">
       <div className="grid grid-cols-2">
         <div>
           <h1 className="text-4xl font-bold mb-4">Nosotros</h1>

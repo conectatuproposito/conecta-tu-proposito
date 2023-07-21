@@ -3,7 +3,7 @@ import Contact from "./Contact";
 
 export default function Contacto() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col xl:max-w-screen-xl m-auto p-4 xl:p-0 ">
       <div>
         <div className="text-center">
           <div>image</div>

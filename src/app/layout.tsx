@@ -29,12 +29,10 @@ export default function RootLayout({
       >
         <Header />
 
-        <main className=" xl:max-w-screen-xl m-auto p-4 xl:p-0 ">
-          {children}
-        </main>
+        <main>{children}</main>
 
-        <footer className="xl:max-w-screen-xl mx-auto py-8 px-4 ">
-          <div className="flex flex-col md:flex-row justify-between gap-6">
+        <footer className="xl:max-w-screen-xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between gap-6 py-8 px-4">
             <div className="text-center md:text-left">
               <div className="text-xl font-bold">
                 <Image
@@ -50,25 +48,25 @@ export default function RootLayout({
 
             <div className="flex justify-around gap-16">
               <div>
-                <div className="text-xl font-bold">Website</div>
+                <div className="text-xl text-purple-700">Website</div>
                 <div className="flex flex-col">
-                  <Link href="/" className=" hover:text-white">
+                  <Link href="/" className=" hover:text-purple-700">
                     inicio
                   </Link>
-                  <Link href="/nosotros" className=" hover:text-white">
+                  <Link href="/nosotros" className=" hover:text-purple-700">
                     nosotros
                   </Link>
-                  <Link href="/conectate" className=" hover:text-white">
+                  <Link href="/conectate" className=" hover:text-purple-700">
                     contactate
                   </Link>
-                  <Link href="/contacto" className=" hover:text-white">
+                  <Link href="/contacto" className=" hover:text-purple-700">
                     contacto
                   </Link>
                 </div>
               </div>
 
               <div className="text-center md:text-left">
-                <div className="text-xl font-bold">Pronto</div>
+                <div className="text-xl text-purple-700">Pronto</div>
                 <div>
                   <div className="">Blog</div>
                   <div className="">Escuela conecta</div>
@@ -77,10 +75,10 @@ export default function RootLayout({
               </div>
 
               <div className="text-center md:text-left">
-                <div className="text-xl font-bold">Aliados</div>
+                <div className="text-xl  text-purple-700">Aliados</div>
                 <a
                   href="https://www.iopenerinstitute.com/happiness-at-work-what"
-                  className=" hover:text-white"
+                  className=" hover:text-purple-700"
                 >
                   i Opener Institute
                 </a>
@@ -106,7 +104,7 @@ export default function RootLayout({
             </div>
           </div>
 
-          <div className="mt-8 flex flex-col md:flex-row justify-between items-center">
+          <div className="mt-8 flex flex-col md:flex-row justify-between items-center py-8 px-4 ">
             <div></div>
             <div></div>
 
@@ -115,19 +113,22 @@ export default function RootLayout({
             <div className="mt-8 md:mt-0">
               <div className="">Síguenos en redes sociales</div>
               <div className="mt-2 flex space-x-2">
-                <a href="" target="_blank" className=" hover:text-white">
+                <a href="" target="_blank" className=" hover:text-purple-700">
                   instagram
                 </a>
-                <a href="" target="_blank" className=" hover:text-white">
+                <a href="" target="_blank" className=" hover:text-purple-700">
                   linkedin
                 </a>
-                <a href="" target="_blank" className=" hover:text-white">
+                <a href="" target="_blank" className=" hover:text-purple-700">
                   twitter
                 </a>
               </div>
             </div>
           </div>
         </footer>
+        <div className="flex items-center justify-center h-20 w-full  bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700">
+          ©2023 Conecta tu propósito. All rights reserved
+        </div>
       </body>
     </html>
   );

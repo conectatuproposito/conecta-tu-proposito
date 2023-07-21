@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-between m-auto">
-      <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-4 w-full overflow-hidden">
+      <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-4 w-full overflow-hidden  xl:max-w-screen-xl m-auto p-4 xl:p-0 ">
         <div className="my-auto">
           <div className="text-5xl font-bold mb-4">
             Diseña y proyecta el ser <br /> humano que hay en ti…
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="text-center">
+      <div className="text-center  xl:max-w-screen-xl m-auto p-4 xl:p-0 ">
         <Image
           src="/isotipo.png"
           alt="isotipo"
@@ -70,7 +70,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="text-center">
+      <div className="text-center  xl:max-w-screen-xl m-auto p-4 xl:p-0 ">
         <div className="grid grid-cols-2 gap-4">
           <div className="mb-8">
             <div className="text-4xl font-bold mb-4">
@@ -109,48 +109,77 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-        <div>
-          <div className="mb-4">image</div>
+      <div className="bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700 w-full">
+        <div className="xl:max-w-screen-xl m-auto p-4 xl:p-0 grid grid-cols-1 md:grid-cols-3 gap-8  ">
           <div>
-            <div className="text-xl font-bold mb-2">Familia</div>
-            <div>
-              <ul className="text-left">
-                <li>Vivir inteligentemente saludable</li>
-                <li>Familia inteligentemente saludable</li>
-                <li>Adulto mayor inteligentemente saludable</li>
-              </ul>
+            <div className="mb-4">
+              <Image
+                src="/home1.png"
+                alt="Home 1"
+                width={200}
+                height={200}
+                className="w-full md:scale-125"
+                priority
+              />
             </div>
+            <div>
+              <div className="text-xl font-bold mb-2">Familia</div>
+              <div>
+                <ul className="text-left">
+                  <li>Vivir inteligentemente saludable</li>
+                  <li>Familia inteligentemente saludable</li>
+                  <li>Adulto mayor inteligentemente saludable</li>
+                </ul>
+              </div>
+            </div>
+            <div className="text-blue-500 hover:text-blue-600">ver más +</div>
           </div>
-          <div className="text-blue-500 hover:text-blue-600">ver más +</div>
-        </div>
-        <div>
-          <div className="mb-4">image</div>
           <div>
-            <div className="text-xl font-bold mb-2">Familia</div>
-            <div>
-              <ul className="text-left">
-                <li>Vivir inteligentemente saludable</li>
-                <li>Familia inteligentemente saludable</li>
-                <li>Adulto mayor inteligentemente saludable</li>
-              </ul>
+            <div className="mb-4">
+              <Image
+                src="/home1.png"
+                alt="Home 1"
+                width={200}
+                height={200}
+                className="w-full md:scale-125"
+                priority
+              />
             </div>
+            <div>
+              <div className="text-xl font-bold mb-2">Familia</div>
+              <div>
+                <ul className="text-left">
+                  <li>Vivir inteligentemente saludable</li>
+                  <li>Familia inteligentemente saludable</li>
+                  <li>Adulto mayor inteligentemente saludable</li>
+                </ul>
+              </div>
+            </div>
+            <div className="text-blue-500 hover:text-blue-600">ver más +</div>
           </div>
-          <div className="text-blue-500 hover:text-blue-600">ver más +</div>
-        </div>
-        <div>
-          <div className="mb-4">image</div>
           <div>
-            <div className="text-xl font-bold mb-2">Familia</div>
-            <div>
-              <ul className="text-left">
-                <li>Vivir inteligentemente saludable</li>
-                <li>Familia inteligentemente saludable</li>
-                <li>Adulto mayor inteligentemente saludable</li>
-              </ul>
+            <div className="mb-4">
+              <Image
+                src="/home1.png"
+                alt="Home 1"
+                width={200}
+                height={200}
+                className="w-full md:scale-125"
+                priority
+              />
             </div>
+            <div>
+              <div className="text-xl font-bold mb-2">Familia</div>
+              <div>
+                <ul className="text-left">
+                  <li>Vivir inteligentemente saludable</li>
+                  <li>Familia inteligentemente saludable</li>
+                  <li>Adulto mayor inteligentemente saludable</li>
+                </ul>
+              </div>
+            </div>
+            <div className="text-blue-500 hover:text-blue-600">ver más +</div>
           </div>
-          <div className="text-blue-500 hover:text-blue-600">ver más +</div>
         </div>
       </div>
     </div>
