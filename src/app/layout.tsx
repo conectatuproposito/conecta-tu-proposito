@@ -48,7 +48,7 @@ export default function RootLayout({
               <Link href="/conectate" className="hover:text-pink-300">
                 contactate
               </Link>
-              <Link href="/blog" className="hover:text-pink-300">
+              <Link href="/" className="hover:text-pink-300">
                 blog
               </Link>
               <Link href="/contacto" className="hover:text-pink-300">
@@ -127,9 +127,6 @@ export default function RootLayout({
                   </Link>
                   <Link href="/conectate" className=" hover:text-white">
                     contactate
-                  </Link>
-                  <Link href="/blog" className=" hover:text-white">
-                    blog
                   </Link>
                   <Link href="/contacto" className=" hover:text-white">
                     contacto

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Contact from "./Contact";
 
 export default function Contacto() {
   return (
@@ -25,46 +25,7 @@ export default function Contacto() {
         <div className="mb-4">En breve nos comunicaremos contigo.</div>
       </div>
 
-      <div>
-        <div className="flex flex-col mb-4">
-          <label htmlFor="" className="font-bold mb-2">
-            Nombres
-          </label>
-          <input type="text" className="py-2 px-4 border rounded-lg" />
-        </div>
-
-        <div className="flex flex-col mb-4">
-          <label htmlFor="" className="font-bold mb-2">
-            Apellidos
-          </label>
-          <input type="text" className="py-2 px-4 border rounded-lg" />
-        </div>
-
-        <div className="flex flex-col mb-4">
-          <label htmlFor="" className="font-bold mb-2">
-            Email
-          </label>
-          <input type="text" className="py-2 px-4 border rounded-lg" />
-        </div>
-
-        <div className="flex flex-col mb-4">
-          <label htmlFor="" className="font-bold mb-2">
-            Teléfono
-          </label>
-          <input type="text" className="py-2 px-4 border rounded-lg" />
-        </div>
-
-        <div className="flex flex-col mb-4">
-          <label htmlFor="" className="font-bold mb-2">
-            Mensaje
-          </label>
-          <textarea className="py-2 px-4 border rounded-lg" rows={4}></textarea>
-        </div>
-
-        <button className="bg-blue-500 text-white py-2 px-4 rounded-lg">
-          Enviar
-        </button>
-      </div>
+      <Contact />
     </main>
   );
 }
