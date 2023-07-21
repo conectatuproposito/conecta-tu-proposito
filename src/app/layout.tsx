@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 // import { Nunito } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import Header from "./Header";
 
 // const nunito = Nunito({
 //   weight: ["200", "300", "400", "500", "600", "700", "800", "900", "1000"],
@@ -25,83 +26,12 @@ export default function RootLayout({
       <body
       // className={nunito.className}
       >
-        <header className="bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700 h-20 transition-all">
-          <div className="container mx-auto flex justify-around items-center py-4 uppercase">
-            <Link href="/">
-              <Image
-                src="/logo.svg"
-                alt="Instagram Logo"
-                className="pointer"
-                width={140}
-                height={40}
-                priority
-              />
-            </Link>
+        <Header />
 
-            <nav className="flex gap-4 text-black">
-              <Link href="/" className=" hover:text-pink-300">
-                inicio
-              </Link>
-              <Link href="/nosotros" className="hover:text-pink-300">
-                nosotros
-              </Link>
-              <Link href="/conectate" className="hover:text-pink-300">
-                contactate
-              </Link>
-              <Link href="/" className="hover:text-pink-300">
-                blog
-              </Link>
-              <Link href="/contacto" className="hover:text-pink-300">
-                contacto
-              </Link>
+        <main className=" xl:max-w-screen-xl m-auto">{children}</main>
 
-              <a href="" target="_blank" className="hover:text-gray-200 w-6">
-                <Image
-                  src="/instagram.svg"
-                  alt="Instagram Logo"
-                  width={22}
-                  height={22}
-                  priority
-                />
-              </a>
-
-              <a href="" target="_blank" className="hover:text-gray-200">
-                <Image
-                  src="/linkedin.svg"
-                  alt="Linkedin Logo"
-                  width={22}
-                  height={22}
-                  priority
-                />
-              </a>
-
-              <a href="" target="_blank" className="hover:text-gray-200">
-                <Image
-                  src="/twitter.svg"
-                  alt="twitter Logo"
-                  width={22}
-                  height={22}
-                  priority
-                />
-              </a>
-
-              <a href="" target="_blank" className="hover:text-gray-200">
-                <Image
-                  src="/facebook.svg"
-                  alt="facebook Logo"
-                  width={22}
-                  height={22}
-                  priority
-                />
-              </a>
-            </nav>
-          </div>
-        </header>
-
-        {children}
-
-        <footer className="max-w-screen-xl mx-auto py-8 px-4 ">
-          <div className="flex justify-between gap-6">
+        <footer className="xl:max-w-screen-xl mx-auto py-8 px-4 ">
+          <div className="flex flex-col md:flex-row justify-between gap-6">
             <div className="text-center md:text-left">
               <div className="text-xl font-bold">
                 <Image

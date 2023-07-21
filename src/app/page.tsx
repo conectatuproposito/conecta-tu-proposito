@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Button = ({ children }: { children: React.ReactNode }) => {
   return (
-    <button className="bg-violet-950 rounded-full p-2 px-6 hover:bg-sky-400 transition-all">
+    <button className="text-white  bg-violet-950 rounded-full p-2 px-6 hover:bg-sky-400 transition-all">
       {children}
     </button>
   );
@@ -10,18 +10,16 @@ const Button = ({ children }: { children: React.ReactNode }) => {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="grid grid-cols-2 gap-4">
-        <div>
-          <div className="text-4xl font-bold mb-4">
+    <div className="flex flex-col items-center justify-between m-auto">
+      <div className="grid grid-cols-2 gap-4 w-full overflow-hidden">
+        <div className=" my-auto">
+          <div className="text-5xl font-bold mb-4">
             Diseña y proyecta el ser <br /> humano que hay en ti…
           </div>
-          <div className="mb-4">
+          <div className="mb-4 text-3xl">
             Elevar el ancla, una opción que siempre <br />
             tendrás disponible en tu vida.
           </div>
-          <div className="text-xl font-bold mb-8"></div>
-
           <Button>Conecta con tu proposito</Button>
         </div>
         <div>
@@ -30,7 +28,7 @@ export default function Home() {
             alt="Home 1"
             width={500}
             height={500}
-            className="w-full"
+            className="w-full scale-125"
             priority
           />
         </div>
@@ -152,6 +150,6 @@ export default function Home() {
           <div className="text-blue-500 hover:text-blue-600">ver más +</div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
