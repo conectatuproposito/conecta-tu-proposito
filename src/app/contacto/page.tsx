@@ -1,8 +1,9 @@
+import Image from "next/image";
 import Contact from "./Contact";
 
 export default function Contacto() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <div className="flex flex-col">
       <div>
         <div className="text-center">
           <div>image</div>
@@ -20,12 +21,19 @@ export default function Contacto() {
       </div>
 
       <div className="text-center">
-        <div>image</div>
+        <Image
+          src="/isotipo.png"
+          alt="isotipo"
+          width={96}
+          height={96}
+          priority
+          className="m-auto"
+        />
         <h2 className="text-2xl font-bold mt-4">Contáctanos</h2>
         <div className="mb-4">En breve nos comunicaremos contigo.</div>
       </div>
 
       <Contact />
-    </main>
+    </div>
   );
 }

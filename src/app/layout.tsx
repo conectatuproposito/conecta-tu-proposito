@@ -28,7 +28,9 @@ export default function RootLayout({
       >
         <Header />
 
-        <main className=" xl:max-w-screen-xl m-auto">{children}</main>
+        <main className=" xl:max-w-screen-xl m-auto p-4 xl:p-0 ">
+          {children}
+        </main>
 
         <footer className="xl:max-w-screen-xl mx-auto py-8 px-4 ">
           <div className="flex flex-col md:flex-row justify-between gap-6">

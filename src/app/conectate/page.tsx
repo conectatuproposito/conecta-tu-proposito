@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Contactate() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <div className="flex flex-col">
       <div className="grid grid-cols-2">
         <div>
           <div className="mb-4">image</div>
@@ -183,6 +183,6 @@ export default function Contactate() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

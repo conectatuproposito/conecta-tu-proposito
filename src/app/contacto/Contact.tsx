@@ -2,6 +2,8 @@
 
 import { FC, useState } from "react";
 import { useForm } from "react-hook-form";
+import Button from "@/components/Button";
+import Image from "next/image";
 
 export type FormData = {
   nombres: string;
@@ -40,9 +42,10 @@ const Contact: FC = () => {
   }
 
   const Form = () => (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form className="max-w-3xl m-auto" onSubmit={handleSubmit(onSubmit)}>
       {error && <div>{error}</div>}
-      <div className="flex gap-4">
+
+      <div className="grid grid-cols-2 gap-4">
         <div className="mb-5">
           <label
             htmlFor="name"
@@ -71,7 +74,7 @@ const Contact: FC = () => {
         </div>
       </div>
 
-      <div className="flex gap-4">
+      <div className="grid grid-cols-2 gap-4">
         <div className="mb-5">
           <label
             htmlFor="email"
@@ -117,14 +120,17 @@ const Contact: FC = () => {
         ></textarea>
       </div>
 
-      <div className="text-center">
-        <button
-          className="hover:bg-purple-900 rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none transition-all"
-          disabled={enviando}
-        >
-          Submit
-        </button>
-      </div>
+      <Button disabled={enviando} className="m-auto">
+        Enviar
+        <Image
+          src="/arrow-right.svg"
+          alt="Arrow Right"
+          className="pt-[2px] ml-2 w-3 h-3 "
+          width={17}
+          height={17}
+          priority
+        />
+      </Button>
     </form>
   );
 

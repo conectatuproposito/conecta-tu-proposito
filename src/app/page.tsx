@@ -1,18 +1,11 @@
 import Image from "next/image";
-
-const Button = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <button className="text-white  bg-violet-950 rounded-full p-2 px-6 hover:bg-sky-400 transition-all">
-      {children}
-    </button>
-  );
-};
+import Button from "@/components/Button";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-between m-auto">
-      <div className="grid grid-cols-2 gap-4 w-full overflow-hidden">
-        <div className=" my-auto">
+      <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-4 w-full overflow-hidden">
+        <div className="my-auto">
           <div className="text-5xl font-bold mb-4">
             Diseña y proyecta el ser <br /> humano que hay en ti…
           </div>
@@ -20,7 +13,17 @@ export default function Home() {
             Elevar el ancla, una opción que siempre <br />
             tendrás disponible en tu vida.
           </div>
-          <Button>Conecta con tu proposito</Button>
+          <Button className="m-auto">
+            Conecta con tu proposito
+            <Image
+              src="/arrow-right.svg"
+              alt="Arrow Right"
+              className="pt-[2px] ml-2 w-3 h-3"
+              width={17}
+              height={17}
+              priority
+            />
+          </Button>
         </div>
         <div>
           <Image
@@ -28,7 +31,7 @@ export default function Home() {
             alt="Home 1"
             width={500}
             height={500}
-            className="w-full scale-125"
+            className="w-full md:scale-125"
             priority
           />
         </div>
