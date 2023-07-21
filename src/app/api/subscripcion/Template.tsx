@@ -4,23 +4,15 @@ import { Section } from "@react-email/section";
 import { Container } from "@react-email/container";
 import { FormData } from "./route";
 
-export default function ContactTemplate({
-  nombres,
-  apellidos,
-  telefono,
-  email,
-  message,
-}: FormData) {
+export default function ContactTemplate({ email }: FormData) {
   return (
     <Html>
       <Section style={main}>
         <Container style={container}>
-          <Text style={heading}>Hola, estos son los datos de contacto.</Text>
-          <Text style={paragraph}>Nombres: {nombres}</Text>
-          <Text style={paragraph}>Apellidos: {apellidos}</Text>
-          <Text style={paragraph}>Telefono: {telefono}</Text>
+          <Text style={heading}>
+            Hola, Se a enviado un correo para subscripcion.
+          </Text>
           <Text style={paragraph}>Email: {email}</Text>
-          <Text style={paragraph}>Message: {message}</Text>
         </Container>
       </Section>
     </Html>

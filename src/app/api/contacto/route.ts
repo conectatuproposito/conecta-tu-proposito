@@ -2,7 +2,7 @@ import { type NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
 import { render } from "@react-email/render";
-import ContactTemplate from "./ContactTemplate";
+import ContactTemplate from "./Template";
 
 export type FormData = {
   nombres: string;

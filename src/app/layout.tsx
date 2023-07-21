@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "./Header";
+import Subscription from "@/components/Subscription";
 
 // const nunito = Nunito({
 //   weight: ["200", "300", "400", "500", "600", "700", "800", "900", "1000"],
@@ -109,21 +110,7 @@ export default function RootLayout({
             <div></div>
             <div></div>
 
-            <div className="text-center md:text-left">
-              <div className="">
-                Registráte para obtener beneficios y contenido de valor
-              </div>
-              <div className="mt-4 flex items-center">
-                <input
-                  type="text"
-                  className="bg-gray-700  py-2 px-4 rounded-lg focus:outline-none"
-                  placeholder="Ingresa tu correo electrónico"
-                />
-                <button className="ml-2 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none">
-                  Suscribir
-                </button>
-              </div>
-            </div>
+            <Subscription />
 
             <div className="mt-8 md:mt-0">
               <div className="">Síguenos en redes sociales</div>

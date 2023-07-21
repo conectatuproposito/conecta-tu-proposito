@@ -21,7 +21,7 @@ const Contact: FC = () => {
 
   function onSubmit(data: FormData) {
     setEnviando(true);
-    const apiEndpoint = "/api/email";
+    const apiEndpoint = "/api/contacto";
 
     fetch(apiEndpoint, {
       method: "POST",
