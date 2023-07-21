@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "@/components/Button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -109,76 +110,99 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700 w-full">
+      <div className="bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700 w-full py-16">
         <div className="xl:max-w-screen-xl m-auto p-4 xl:p-0 grid grid-cols-1 md:grid-cols-3 gap-8  ">
-          <div>
-            <div className="mb-4">
+          <div className="rounded-[30px] bg-white overflow-hidden">
+            <div className="h-40 overflow-hidden hover:overflow-visible transition-all">
               <Image
-                src="/home1.png"
-                alt="Home 1"
-                width={200}
-                height={200}
-                className="w-full md:scale-125"
+                className="w-full -top-8 relative hover:scale-[1.7] transition-all"
+                src="/card-1.png"
+                alt="Card 1"
+                width={100}
+                height={100}
                 priority
               />
             </div>
-            <div>
+            <div className="px-6 py-4">
               <div className="text-xl font-bold mb-2">Familia</div>
-              <div>
-                <ul className="text-left">
-                  <li>Vivir inteligentemente saludable</li>
-                  <li>Familia inteligentemente saludable</li>
-                  <li>Adulto mayor inteligentemente saludable</li>
-                </ul>
+
+              <ul className="text-left">
+                <li>Vivir inteligentemente saludable</li>
+                <li>Familia inteligentemente saludable</li>
+                <li>Adulto mayor inteligentemente saludable</li>
+              </ul>
+
+              <div className="text-end">
+                <Link
+                  className="text-purple-700 hover:text-purple-900"
+                  href="/"
+                >
+                  ver más +
+                </Link>
               </div>
             </div>
-            <div className="text-blue-500 hover:text-blue-600">ver más +</div>
           </div>
-          <div>
-            <div className="mb-4">
+
+          <div className="rounded-[30px] bg-white overflow-hidden">
+            <div className="h-40 overflow-hidden hover:overflow-visible transition-all">
               <Image
-                src="/home1.png"
-                alt="Home 1"
-                width={200}
-                height={200}
-                className="w-full md:scale-125"
+                className="w-full -top-8 relative hover:scale-[1.7] transition-all"
+                src="/card-2.png"
+                alt="Card 1"
+                width={100}
+                height={100}
                 priority
               />
             </div>
-            <div>
-              <div className="text-xl font-bold mb-2">Familia</div>
-              <div>
-                <ul className="text-left">
-                  <li>Vivir inteligentemente saludable</li>
-                  <li>Familia inteligentemente saludable</li>
-                  <li>Adulto mayor inteligentemente saludable</li>
-                </ul>
+            <div className="px-6 py-4">
+              <div className="text-xl font-bold mb-2">Modelo de desempeño</div>
+
+              <ul className="text-left">
+                <li>Auto-desempeño y felicidad en el trabajo</li>
+                <li>Medición individual y de equipo</li>
+                <li>Planes de acción</li>
+              </ul>
+
+              <div className="text-end">
+                <Link
+                  className="text-purple-700 hover:text-purple-900"
+                  href="/"
+                >
+                  ver más +
+                </Link>
               </div>
             </div>
-            <div className="text-blue-500 hover:text-blue-600">ver más +</div>
           </div>
-          <div>
-            <div className="mb-4">
+
+          <div className="rounded-[30px] bg-white overflow-hidden">
+            <div className="h-40 overflow-hidden hover:overflow-visible transition-all">
               <Image
-                src="/home1.png"
-                alt="Home 1"
-                width={200}
-                height={200}
-                className="w-full md:scale-125"
+                className="w-full -top-8 relative hover:scale-[1.7] transition-all"
+                src="/card-3.png"
+                alt="Card 1"
+                width={100}
+                height={100}
                 priority
               />
             </div>
-            <div>
-              <div className="text-xl font-bold mb-2">Familia</div>
-              <div>
-                <ul className="text-left">
-                  <li>Vivir inteligentemente saludable</li>
-                  <li>Familia inteligentemente saludable</li>
-                  <li>Adulto mayor inteligentemente saludable</li>
-                </ul>
+            <div className="px-6 py-4">
+              <div className="text-xl font-bold mb-2">Psicoterapia</div>
+
+              <ul className="text-left">
+                <li>Intervenciones personalizadas</li>
+                <li>Vida con sentido</li>
+                <li>Conecta tu vida</li>
+              </ul>
+
+              <div className="text-end">
+                <Link
+                  className="text-purple-700 hover:text-purple-900"
+                  href="/"
+                >
+                  ver más +
+                </Link>
               </div>
             </div>
-            <div className="text-blue-500 hover:text-blue-600">ver más +</div>
           </div>
         </div>
       </div>

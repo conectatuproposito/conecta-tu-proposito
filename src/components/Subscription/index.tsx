@@ -41,34 +41,33 @@ const Subscription: FC = () => {
     <form className="max-w-3xl m-auto" onSubmit={handleSubmit(onSubmit)}>
       {error && <div>{error}</div>}
 
-      <div className="text-center md:text-left">
-        <div className="">
-          Registráte para obtener beneficios y contenido de valor
-        </div>
-        <div className="mt-4 flex items-center">
+      <div className="text-center md:text-left flex">
+        <div className="mt-4 items-center">
+          <div className="text-purple-500 mb-2">
+            * Registráte para obtener beneficios y contenido de valor
+          </div>
           <input
             type="email"
             placeholder="example@domain.com"
-            className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
+            className=" h-8 w-full border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md rounded-s-[30px] transition-all"
             {...register("email", { required: true })}
           />
-          <button className="ml-2 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none">
-            Suscribir
-          </button>
         </div>
-      </div>
 
-      <Button disabled={enviando} className="m-auto">
-        Enviar
-        <Image
-          src="/arrow-right.svg"
-          alt="Arrow Right"
-          className="pt-[2px] ml-2 w-3 h-3 "
-          width={17}
-          height={17}
-          priority
-        />
-      </Button>
+        <Button
+          disabled={enviando}
+          className="h-8 w-8 py-0 px-0 self-end rounded-s-[30px]"
+        >
+          <Image
+            className="pt-[1px] ml-2 w-3 h-3"
+            src="/arrow-right.svg"
+            alt="Arrow Right"
+            width={17}
+            height={17}
+            priority
+          />
+        </Button>
+      </div>
     </form>
   );
 
