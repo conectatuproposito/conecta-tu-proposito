@@ -2,11 +2,15 @@ import Image from "next/image";
 
 export default function Nosotros() {
   return (
-    <div className="flex flex-col xl:max-w-screen-xl m-auto p-4 xl:p-0 ">
-      <div className="grid grid-cols-2">
-        <div>
-          <h1 className="text-4xl font-bold mb-4">Nosotros</h1>
-          <div className="mb-4">
+    <div className="bg-[#F0F2FF]">
+    <div className="flex flex-col xl:max-w-screen-xl m-auto p-4 xl:p-100 bg-[#F0F2FF]">
+      {/* nosotros */}
+      <div className="grid md:grid-cols-2">
+        <div className="md:pr-[50px]">
+          <h1 className="text-4xl font-bold mb-4 font-bold text-3xl
+          bg-gradient-to-b from-[#3ABBED] to-[#9647C9]
+          bg-clip-text text-transparent">Nosotros</h1>
+          <div className="mb-4 lg:text-[28px] font-semibold">
             Descubre la forma de poder integrar y unificar todas las dimensiones
             del ser humano proyectando, diseñando y edificando el ser humano que
             estás llamado a ser.
@@ -20,17 +24,21 @@ export default function Nosotros() {
             la dimensión biológica, psicológica, social y espiritual.
           </div>
         </div>
-        <div>
+        <div className="shadow-inner 
+              ">
           <Image
             src="/nosotros.png"
             alt="iconos"
             width={500}
             height={500}
             priority
-            className="w-full"
+            className="w-full 
+              
+              "
           />
         </div>
       </div>
+      {/* nuestro equipo */}
       <div className="text-center">
         <div>
           <Image
@@ -41,7 +49,9 @@ export default function Nosotros() {
             priority
             className="m-auto"
           />
-          <h2 className="text-2xl font-bold mt-8">Nuestro equipo</h2>
+          <h2 className="text-2xl font-bold mt-8 font-bold text-3xl
+          bg-gradient-to-b from-[#3ABBED] to-[#9647C9]
+          bg-clip-text text-transparent">Nuestro equipo</h2>
         </div>
         <div className="mt-4 text-left">
           Soy un ser humano que entendió la importancia de caer en la cuenta y
@@ -85,12 +95,17 @@ export default function Nosotros() {
           dimensión biológica, psicológica, social y espiritual.
         </div>
       </div>
-      <div className="grid grid-cols-2">
-        <div>
-          <h3 className="text-xl font-bold mt-8">
-            Alberto Aguirre, Arquitecto Humano
+      {/* alberto  */}
+      <div className="grid md:grid-cols-2 relative ">
+        <div className="grid">
+          <h3 className="order-1  mt-8
+          font-bold text-3xl
+          bg-gradient-to-b from-[#3ABBED] to-[#9647C9]
+          bg-clip-text text-transparent
+          ">
+            Alberto Aguirre,<br /> Arquitecto Humano
           </h3>
-          <div className="mt-4 text-left">
+          <div className="mt-4 text-left order-3 md:order-2">
             Master en psicología y Coach ontológico profesional certificado por
             la federación internacional de coaching IFC.
             <br />
@@ -107,17 +122,25 @@ export default function Nosotros() {
             profesional, la felicidad en la vida y en el trabajo.
           </div>
         </div>
-        <div>
-          <Image
-            src="/personaje.png"
-            alt="iconos"
-            width={500}
-            height={500}
-            priority
-            className="w-full"
-          />
+        <div className="relative w-full">
+          <div className="order-2 md:order-3 md:absolute bottom-[-50px]">
+            <Image
+              src="/personaje.png"
+              alt="iconos"
+              width={500}
+              height={500}
+              priority
+              className="w-full"
+              />
+          </div>
         </div>
+
       </div>
+        
+        
+    </div>
+      <div className="flex items-center justify-center h-20 w-full  bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700"/>
+      
     </div>
   );
 }
