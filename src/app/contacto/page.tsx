@@ -34,8 +34,8 @@ export default function Contacto() {
         <Image
           src="/contacto.png"
           alt="Contacto"
-          width={250}
-          height={250}
+          width={1500}
+          height={1500}
           priority
           className="m-auto order-1 md:oder-2 w-full"
         />
