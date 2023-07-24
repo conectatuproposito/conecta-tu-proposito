@@ -16,21 +16,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  ...args
 }: {
   children: React.ReactNode;
 }) {
+  console.log({ args });
   return (
     <html lang="en">
       <body className={nunito.className + " bg-[rgba(240,242,255,1)]"}>
         <Header />
 
-        <main>{children}</main>
+        <main>{children} </main>
 
         <Footer />
-
-        <div className="flex items-center justify-center h-20 w-full  bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700">
-          ©2023 Conecta tu propósito. All rights reserved
-        </div>
       </body>
     </html>
   );

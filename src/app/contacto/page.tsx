@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Contact from "./Contact";
+import AnimationMain from "@/components/AnimationDiv";
 
 export default function Contacto() {
   return (
-    <div className="flex flex-col xl:max-w-screen-xl m-auto p-4 xl:p-0 ">
+    <AnimationMain className="flex flex-col xl:max-w-screen-xl m-auto p-4 xl:p-0 ">
       <div className="grid grid-cols-1 md:grid-cols-2 my-16">
         <div className="order-2 md:order-1">
           <div>
@@ -63,6 +64,6 @@ export default function Contacto() {
       </div>
 
       <Contact />
-    </div>
+    </AnimationMain>
   );
 }

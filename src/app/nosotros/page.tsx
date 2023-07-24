@@ -1,8 +1,9 @@
+import AnimationMain from "@/components/AnimationDiv";
 import Image from "next/image";
 
 export default function Nosotros() {
   return (
-    <div className="bg-[#F0F2FF]">
+    <AnimationMain className="bg-[#F0F2FF]">
       <div className="flex flex-col m-auto ">
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 md:mb-16  ">
           <div className="order-2 md:order-1">
@@ -169,6 +170,6 @@ export default function Nosotros() {
         </div>
       </div>
       <div className="h-20 w-full bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700" />
-    </div>
+    </AnimationMain>
   );
 }

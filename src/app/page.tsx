@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Button from "@/components/Button";
 import Link from "next/link";
+import AnimationMain from "@/components/AnimationDiv";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-between m-auto overflow-hidden">
+    <AnimationMain className="flex flex-col items-center justify-between m-auto overflow-hidden">
       <div
         className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto md:my-20
           w-full xl:max-w-screen-xl p-4 xl:p-0 
-          "
+        "
       >
         <div className="my-auto order-2 md:order-1">
           <div className="text-3xl leading-10 sm:text-[54px] sm:leading-[3.7rem] font-extrabold mb-4">
@@ -147,7 +148,7 @@ export default function Home() {
           </Card>
         </div>
       </div>
-    </div>
+    </AnimationMain>
   );
 }
 

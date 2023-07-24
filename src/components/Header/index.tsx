@@ -1,19 +1,41 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Hamburg from "@/components/Hamburg";
+import { motion } from "framer-motion";
 
 import "./style.css";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [reloadAnimation, setReloadAnimation] = useState(false);
   const pathname = usePathname();
 
+  useEffect(() => {
+    setReloadAnimation(false);
+
+    setTimeout(() => {
+      setReloadAnimation(true);
+    }, 1000);
+  }, [pathname]);
+
   return (
-    <header className="bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700 md:h-20 transition-all">
+    <motion.header
+      initial={reloadAnimation ? "hidden" : "visible"}
+      animate={reloadAnimation ? "visible" : "hidden"}
+      variants={{
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+        },
+      }}
+      className="bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700 md:h-20 transition-all"
+    >
       <div
         className={`flex flex-col md:flex-row w-full md:justify-around mx-auto items-center  uppercase p-4 md:p-0 md:py-4`}
       >
@@ -118,7 +140,7 @@ const Header = () => {
           </div>
         </nav>
       </div>
-    </header>
+    </motion.header>
   );
 };
 

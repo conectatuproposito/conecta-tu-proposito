@@ -1,4 +1,5 @@
 "use client";
+import AnimationMain from "@/components/AnimationDiv";
 import Button from "@/components/Button";
 import Image from "next/image";
 
@@ -64,7 +65,7 @@ export default function Contactate() {
   };
 
   return (
-    <div className="flex flex-col m-auto xl:p-0 gap-10 xl:gap-28 overflow-hidden">
+    <AnimationMain className="flex flex-col m-auto xl:p-0 gap-10 xl:gap-28 overflow-hidden">
       <Article
         id="modelo"
         title="Modelo de desempeño"
@@ -235,7 +236,7 @@ export default function Contactate() {
         </div>
       </div>
       <div className="linea-gradient-card" />
-    </div>
+    </AnimationMain>
   );
 }
 
