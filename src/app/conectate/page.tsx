@@ -22,10 +22,10 @@ const Article = ({
           direction === "left" ? "md:order-1" : "md:order-2"
         }`}
       >
-        <div className="m-2 xl:m-14">
+        <div className="m-2 lg:m-14 xl:mx-[15%] xl:my-[20%] ">
           <h3
-            className="text-5xl font-bold mb-4
-                bg-gradient-to-b from-blue-400 to-purple-500 bg-clip-text text-transparent
+            className="text-5xl font-bold mb-4 bg-gradient-to-b 
+              from-blue-400 to-purple-500 bg-clip-text text-transparent
               "
           >
             {title}
@@ -42,11 +42,11 @@ const Article = ({
           className={`linea-gradient ${direction === "right" && "reverse"}`}
         />
         <div
-          className={`w-full md:h-full h-96 ${
-            direction === "left" && "reverse"
-          }`}
+          className={`w-full md:h-full h-96 `}
           style={{
-            backgroundImage: `linear-gradient(90deg, rgba(255,255,255,0) 50%, rgba(240,242,255,1) 99%), url(/${image}.png)`,
+            backgroundImage: `linear-gradient(${
+              direction === "right" ? "90deg" : "270deg"
+            }, rgba(255,255,255,0) 50%, rgba(240,242,255,1) 99%), url(/${image}.png)`,
             backgroundSize: "cover",
           }}
         />
@@ -64,7 +64,7 @@ export default function Contactate() {
   };
 
   return (
-    <div className="flex flex-col m-auto xl:p-0 gap-10 overflow-hidden">
+    <div className="flex flex-col m-auto xl:p-0 gap-10 xl:gap-28 overflow-hidden">
       <Article
         id="modelo"
         title="Modelo de desempeño"
@@ -121,7 +121,7 @@ export default function Contactate() {
           y familiares.
         </div>
         <div className="mb-4">
-          <ul>
+          <ul className="list-disc pl-5">
             <li>Vivir Inteligentemente Saludable</li>
             <li>Familia Inteligentemente Saludable</li>
             <li>Jóvenes Inteligentemente Saludables</li>
@@ -152,7 +152,7 @@ export default function Contactate() {
           espiritual.
         </div>
         <div className="mb-4">
-          <ul>
+          <ul className="list-disc pl-5">
             <li>Intervenciones personalizadas</li>
             <li>Vida con sentido</li>
             <li>Conecta tu vida</li>
@@ -249,7 +249,12 @@ const Card = ({
   profesion: string;
 }) => {
   return (
-    <div className="flex flex-col mx-auto mb-4 text-center w-[360px] shadow-xl rounded-b-3xl overflow-hidden">
+    <div
+      className="flex flex-col mx-auto mb-4 w-[360px] 
+        shadow-xl rounded-b-3xl overflow-hidden
+        text-center 
+      "
+    >
       <div className="linea-gradient-card" />
       <div className="flex-1 p-7">
         <div className="flex gap-2 w-fit mx-auto mb-2">
@@ -267,7 +272,11 @@ const Card = ({
         </div>
         <div>{children}</div>
       </div>
-      <div className="flex flex-col justify-center text-white bg-gradient-to-b from-blue-400 to-purple-500 h-28 ">
+      <div
+        className="flex flex-col justify-center text-white
+          bg-gradient-to-b from-blue-400 to-purple-500 h-28 
+        "
+      >
         <div>{nombre}</div>
         <div>{profesion}</div>
       </div>

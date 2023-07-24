@@ -4,14 +4,14 @@ export default function Nosotros() {
   return (
     <div className="bg-[#F0F2FF]">
       <div className="flex flex-col m-auto ">
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 md:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 md:mb-16  ">
           <div className="order-2 md:order-1">
             <div
               className="
                 p-2
                 md:my-10 md:ml-5 md:p-0
                 lg:my-20 lg:ml-10 
-                xl:m-14
+                xl:mx-[15%] xl:my-[25%]
               "
             >
               <h3
@@ -51,10 +51,10 @@ export default function Nosotros() {
 
         <div
           className=" 
-            p-2 md:p-0
+            p-2 mb-16 md:p-0
             md:max-w-screen-sm
             lg:max-w-screen-md
-            xl:max-w-screen-lg mx-auto mb-16
+            xl:max-w-screen-lg mx-auto 
           "
         >
           <div className="text-center">
@@ -122,7 +122,7 @@ export default function Nosotros() {
         <div
           className="grid md:grid-cols-2 relative mx-auto
             p-2 md:p-5 lg:p-10
-            xl:max-w-screen-xl xl:p-0
+            xl:max-w-screen-xl xl:p-0 xl:mt-20
           "
         >
           <div className="flex flex-col">
