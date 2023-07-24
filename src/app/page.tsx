@@ -1,113 +1,188 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Button from "@/components/Button";
+import Link from "next/link";
+
+const imageClassName =
+  " w-full relative hover:scale-[1.65] top-0 hover:top-[41%] card-transition";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="flex flex-col items-center justify-between m-auto overflow-hidden">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto md:my-20
+          w-full xl:max-w-screen-xl p-4 xl:p-0 
+          "
+      >
+        <div className="my-auto order-2 md:order-1">
+          <div className="text-3xl leading-10 sm:text-[54px] sm:leading-[3.7rem] font-extrabold mb-4">
+            Diseña y proyecta el ser <br /> humano que hay en ti…
+          </div>
+          <div className="text-xl sm:text-3xl font-semibold mb-8">
+            Elevar el ancla, una opción que siempre <br />
+            tendrás disponible en tu vida.
+          </div>
+          <Button href="/contacto">Conecta con tu proposito</Button>
+        </div>
+        <div className="order-1 md:order-2 relative min-h-[320px]">
+          <Image
+            src="/home1.png"
+            alt="Home 1"
+            width={400}
+            height={400}
+            className="absolute max-w-[500px] w-full md:scale-[1.40] -top-12 md:-top-10"
+            priority
+          />
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+      <div className="text-center  xl:max-w-screen-xl mt-12 md:mt-28  mx-auto p-4 xl:p-0 ">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
+          src="/isotipo.png"
+          alt="isotipo"
+          width={96}
+          height={96}
           priority
+          className="m-auto mb-3"
+        />
+
+        <div
+          className="text-5xl font-bold mb-4
+            bg-gradient-to-b from-blue-400 to-purple-500 bg-clip-text text-transparent
+          "
+        >
+          Un Itinerario personal <br />
+          de cultivo integral
+        </div>
+        <div className="xl:max-w-5xl">
+          Descubrir la dimensión vital, existencial y de continuidad es decir,
+          la interioridad no es una práctica aunque exige práctica, la
+          meditación no es un ejercicio, aunque exija ejercicio, el mismo que se
+          convierte en una dinámica de vida. No hablamos de devociones, de
+          repeticiones, de esquemas preestablecidos, sino de desarrollo, de
+          descubrimiento, del potenciamiento de los valores inherentes a la
+          persona humana.
+        </div>
+        <Image
+          src="/iconos.png"
+          alt="iconos"
+          width={1031}
+          height={408}
+          priority
+          className="mx-auto my-14"
         />
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="xl:max-w-screen-xl mt-6 mb-20 mx-auto p-4 xl:p-0 ">
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="mb-8">
+            <div
+              className="text-5xl font-bold mb-4
+                bg-gradient-to-b from-blue-400 to-purple-500 bg-clip-text text-transparent
+            "
+            >
+              Nos conectamos con tus <br /> necesidades
+            </div>
+            <div className="mb-4 text-xl font-semibold">
+              En conecta tu propósito, marcamos la diferencia con un enfoque
+              humano y personalizado.
+            </div>
+            <div className="text-4xl font-bold mb-4">
+              Conecta es un itinerario
+            </div>
+            <div className="mb-4">
+              El ser humano no puede reducirse unilateralmente a una dimensión o
+              a una parte de su ser, hablar del individuo, de la persona, cada
+              vez está encontrando un eco mayor en todos los ámbitos de la vida,
+              no puede limitarse simplemente a una dimensión que lo caracteriza,
+              teniéndose que prestar atención a todas las realidades, como lo
+              son la dimensión biológica, psicológica, social y espiritual.
+              Descubre la forma de poder, integrar y unificar todas las
+              dimensiones; proyectando, diseñando y edificando el ser humano que
+              estás llamado a ser.
+            </div>
+          </div>
+          <Image
+            src="/composition.png"
+            alt="iconos"
+            width={500}
+            height={500}
+            priority
+            className="w-full"
+          />
+        </div>
+        <div>
+          <Button href="/contacto" className="m-auto">
+            Conoce más
+          </Button>
+        </div>
       </div>
-    </main>
-  )
+
+      <div className="bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700 w-full py-16">
+        <div className="flex flex-wrap xl:grid xl:grid-cols-3 xl:max-w-screen-xl xl:w-fit xl:gap-10 m-auto p-4 xl:p-0 gap-8  ">
+          <Card image="card-1" href="/conectate#familia">
+            <div className="text-xl font-bold mb-2">Familia</div>
+
+            <ul className="list-disc pl-5">
+              <li>Vivir inteligentemente saludable</li>
+              <li>Familia inteligentemente saludable</li>
+              <li>Adulto mayor inteligentemente saludable</li>
+            </ul>
+          </Card>
+
+          <Card image="card-2" href="/conectate">
+            <div className="text-xl font-bold mb-2">Modelo de desempeño</div>
+
+            <ul className="list-disc pl-5">
+              <li>Auto-desempeño y felicidad en el trabajo</li>
+              <li>Medición individual y de equipo</li>
+              <li>Planes de acción</li>
+            </ul>
+          </Card>
+
+          <Card image="card-3" href="/conectate#psicoterapia">
+            <div className="text-xl font-bold mb-2">Psicoterapia</div>
+
+            <ul className="list-disc pl-5">
+              <li>Auto-desempeño y felicidad en el trabajo</li>
+              <li>Medición individual y de equipo</li>
+              <li>Planes de acción</li>
+            </ul>
+          </Card>
+        </div>
+      </div>
+    </div>
+  );
 }
+
+const Card = ({
+  image,
+  children,
+  href,
+}: {
+  image: string;
+  children: React.ReactNode;
+  href: string;
+}) => (
+  <div className="w-[320px] rounded-[30px] mx-auto bg-white overflow-hidden cursor-pointer">
+    <div className="h-40 overflow-hidden hover:overflow-visible">
+      <Image
+        className={imageClassName}
+        src={`/${image}.png`}
+        alt="Card 1"
+        width={100}
+        height={100}
+        priority
+      />
+    </div>
+
+    <div className="px-6 py-4">
+      {children}
+
+      <div className="text-end">
+        <Link className="text-purple-700 hover:text-purple-900" href={href}>
+          ver más +
+        </Link>
+      </div>
+    </div>
+  </div>
+);
