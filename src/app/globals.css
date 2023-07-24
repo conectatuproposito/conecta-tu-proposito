@@ -27,11 +27,11 @@ body {
 } */
 
 .card-transition {
-  transition: top 0.25s linear, transform 0.25s linear;
+  transition: top 0.17s linear, transform 0.17s linear;
 }
 
 .card-transition:hover {
-  transition: top 0.25s linear 0.01s, transform 0.25s linear;
+  transition: top 0.17s linear 0.01s, transform 0.17s linear;
 }
 
 .background-gradient {

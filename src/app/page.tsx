@@ -2,9 +2,6 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import Link from "next/link";
 
-const imageClassName =
-  " w-full relative hover:scale-[1.65] top-0 hover:top-[41%] card-transition";
-
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-between m-auto overflow-hidden">
@@ -154,6 +151,9 @@ export default function Home() {
   );
 }
 
+const imageClassName =
+  " w-full relative hover:scale-[1.66] top-0 hover:top-[41%] card-transition";
+
 const Card = ({
   image,
   children,
@@ -169,8 +169,8 @@ const Card = ({
         className={imageClassName}
         src={`/${image}.png`}
         alt="Card 1"
-        width={100}
-        height={100}
+        width={500}
+        height={500}
         priority
       />
     </div>
