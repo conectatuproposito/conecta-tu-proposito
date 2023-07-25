@@ -97,18 +97,41 @@ const Footer = () => {
 
           <div className="text-center md:text-left">
             <div className="text-md text-purple-700 uppercase">Contacto</div>
-            <div>
-              <div>
-                {/* <img src="/path/to/img" alt="icon" className="h-6" /> */}
-                <div className="">info@conectatuproposito.com</div>
+            <div className="flex flex-col gap-1">
+              <div className="flex gap-2 items-center">
+                <Image
+                  src="/mensaje.png"
+                  alt="Mensaje"
+                  className="pointer w-5 h-5"
+                  width={100}
+                  height={14}
+                  priority
+                />
+                info@conectatuproposito.com
               </div>
-              <div>
-                {/* <img src="/path/to/img" alt="icon" className="h-6" /> */}
-                <div className="">(+57) 310 767 52 03</div>
+
+              <div className="flex gap-2 items-center">
+                <Image
+                  src="/what.png"
+                  alt="Whastapp Logo"
+                  className="pointer w-5 h-5"
+                  width={100}
+                  height={14}
+                  priority
+                />
+                (+57) 310 767 52 03
               </div>
-              <div>
-                {/* <img src="/path/to/img" alt="icon" className="h-6" /> */}
-                <div className="">Envigado - Colombia</div>
+
+              <div className="flex gap-2 items-center">
+                <Image
+                  src="/location.png"
+                  alt="Whastapp Logo"
+                  className="pointer w-[1.2rem] h-[1.4rem]"
+                  width={100}
+                  height={14}
+                  priority
+                />
+                Envigado - Colombia
               </div>
             </div>
           </div>
