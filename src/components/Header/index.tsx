@@ -91,9 +91,9 @@ const Header = () => {
                 }`}
               >
                 <Link
-                  href={Object.values(item)[0]}
+                  href={item.link}
                   className={`hover:text-pink-300 ${
-                    pathname === Object.values(item)[0] && "text-pink-300"
+                    pathname === item.name && "text-pink-300"
                   }`}
                 >
                   {item.name}
