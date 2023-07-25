@@ -11,7 +11,7 @@ import "./style.css";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [reloadAnimation, setReloadAnimation] = useState(false);
+  const [reloadAnimation, setReloadAnimation] = useState(true);
   const pathname = usePathname();
 
   useEffect(() => {

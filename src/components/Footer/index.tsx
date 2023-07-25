@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const Footer = () => {
-  const [reloadAnimation, setReloadAnimation] = useState(false);
+  const [reloadAnimation, setReloadAnimation] = useState(true);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -24,9 +24,15 @@ const Footer = () => {
         variants={{
           hidden: {
             opacity: 0,
+            transition: {
+              velocity: 10,
+            },
           },
           visible: {
             opacity: 1,
+            transition: {
+              velocity: 10,
+            },
           },
         }}
         className="xl:max-w-screen-xl mx-auto"
@@ -175,6 +181,35 @@ const Footer = () => {
       >
         ©2023 Conecta tu propósito. All rights reserved
       </motion.div>
+
+      <div className="fixed bottom-5 right-2 w-16">
+        <motion.div
+          initial={reloadAnimation ? "hidden" : "visible"}
+          animate={reloadAnimation ? "visible" : "hidden"}
+          variants={{
+            hidden: {
+              opacity: 0,
+            },
+            visible: {
+              opacity: 1,
+            },
+          }}
+        >
+          <a
+            target="_blank"
+            href="https://wa.me/573107675203?text=Estoy%20interesado%20en%20su%20contacto"
+          >
+            <Image
+              src="/whatsapp.png"
+              alt="Whastapp Logo"
+              className="pointer m-auto"
+              width={300}
+              height={90}
+              priority
+            />
+          </a>
+        </motion.div>
+      </div>
     </>
   );
 };

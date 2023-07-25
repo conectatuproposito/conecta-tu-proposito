@@ -64,6 +64,8 @@ export default function Contacto() {
       </div>
 
       <Contact />
+
+      <div className="linea-gradient-card" />
     </AnimationMain>
   );
 }

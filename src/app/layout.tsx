@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={nunito.className + " bg-[rgba(240,242,255,1)]"}>
         <Header />
 
-        <main>{children} </main>
+        <main className="min-h-[100vh]">{children} </main>
 
         <Footer />
       </body>

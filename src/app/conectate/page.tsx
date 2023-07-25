@@ -191,6 +191,7 @@ export default function Contactate() {
           </Card>
         </div>
       </div>
+
       <div className="linea-gradient-card" />
     </AnimationMain>
   );
