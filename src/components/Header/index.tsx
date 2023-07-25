@@ -98,11 +98,17 @@ const Header = () => {
                 <Link
                   href={item.link}
                   className={`hover:text-pink-300 ${
-                    pathname === item.name && "text-pink-300"
+                    pathname === item.link && "text-pink-300"
                   } flex items-center transition-all`}
                 >
                   {item.name}
-                  {item.name === "conéctate" && <Arrow className="ml-1" />}
+                  {item.name === "conéctate" && (
+                    <Arrow
+                      className={`ml-1 ${
+                        pathname === item.link && "fill-pink-300"
+                      }`}
+                    />
+                  )}
                 </Link>
 
                 {item.name === "conéctate" && <OtroMenu />}
@@ -142,7 +148,7 @@ const OtroMenu = () => (
     "
   >
     <div className="h-2 bg-pink-300 rounded-t-xl " />
-    <div className="flex flex-col gap-4 bg-[#D4EBF150] p-3">
+    <div className="flex flex-col gap-4 bg-[#D4EBF170] p-3">
       <Link
         className="hover:text-pink-300 cursor-pointer"
         href="/conectate#modelo"
