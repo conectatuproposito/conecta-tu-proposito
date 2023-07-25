@@ -5,7 +5,7 @@ import AnimationMain from "@/components/AnimationDiv";
 export default function Contacto() {
   return (
     <AnimationMain className="flex flex-col xl:max-w-screen-xl m-auto p-4 xl:p-0 ">
-      <div className="grid grid-cols-1 md:grid-cols-2 my-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-16">
         <div className="order-2 md:order-1">
           <div>
             <Image
@@ -42,11 +42,11 @@ export default function Contacto() {
         />
       </div>
 
-      <div className="text-center">
+      <div className="text-center relative -top-24">
         <Image
           src="/isotipo.png"
           alt="isotipo"
-          width={96}
+          width={116}
           height={96}
           priority
           className="m-auto mb-3"
@@ -58,7 +58,7 @@ export default function Contacto() {
         >
           Contáctanos
         </h3>
-        <div className="text-xl font-semibold mb-12">
+        <div className="text-2xl font-semibold mb-2">
           En breve nos comunicaremos contigo.
         </div>
       </div>

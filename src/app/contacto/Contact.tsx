@@ -15,14 +15,15 @@ export type FormData = {
 const inputClassName = `
   border-gradient
   w-full rounded-full
-  border bg-white 
+  border-2 bg-white 
   border-blue-400
-  py-2 px-4
+  py-3 px-4
   text-base font-medium text-gray-700 
   outline-none focus:border-purple-500 
   focus:shadow-md
-  focus:ring-1 focus:ring-purple-700 
+  focus:border-purple-700 
   focus:border-transparent
+  trasition-all
 `;
 
 const Contact: FC = () => {
@@ -53,8 +54,11 @@ const Contact: FC = () => {
       });
   }
 
-  const Form = () => (
-    <form className="max-w-3xl m-auto mb-16" onSubmit={handleSubmit(onSubmit)}>
+  return (
+    <form
+      className="max-w-4xl w-full m-auto mb-16"
+      onSubmit={handleSubmit(onSubmit)}
+    >
       {error && <div>{error}</div>}
 
       <div className="grid grid-cols-2 gap-4">
@@ -106,7 +110,7 @@ const Contact: FC = () => {
             htmlFor="email"
             className="mb-3 block text-base font-medium text-black"
           >
-            Email Address
+            Email
           </label>
           <input
             type="email"
@@ -122,12 +126,17 @@ const Contact: FC = () => {
           htmlFor="message"
           className="mb-3 block text-base font-medium text-black"
         >
-          Message
+          Dejanós tu mensaje
         </label>
         <textarea
           rows={4}
-          placeholder="Type your message"
-          className="w-full resize-none rounded-[25px] border border-purple-500 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-blue-400 focus:shadow-md"
+          placeholder="Cuéntanos cual es tu principal interés..."
+          className="
+            w-full resize-none rounded-[25px] border-2 
+            border-purple-500 bg-white py-3 px-6 text-base font-medium 
+            text-gray-700 outline-none focus:border-blue-400 focus:shadow-md 
+            transition-all md:h-[225px]
+          "
           {...register("message", { required: true })}
         ></textarea>
       </div>
@@ -139,7 +148,7 @@ const Contact: FC = () => {
       bg-purple-800 hover:bg-sky-400 transition-all m-auto`}
         disabled={enviando}
       >
-        Enviar
+        {enviado ? "Enviado" : "Enviar"}
         <Image
           src="/arrow-right.svg"
           alt="Arrow Right"
@@ -150,19 +159,6 @@ const Contact: FC = () => {
         />
       </button>
     </form>
-  );
-
-  return (
-    <div>
-      {enviado ? (
-        <div>
-          Gracias por contactar con nosotros, dentro de poco estaremos en
-          contacto con tigo.
-        </div>
-      ) : (
-        <Form />
-      )}
-    </div>
   );
 };
 

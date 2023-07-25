@@ -69,16 +69,16 @@ const Header = () => {
            ${!isMenuOpen && "hidden md:flex"} mt-4 md:mt-0 transition-all`}
         >
           {[
-            { inicio: "/" },
-            { nosotros: "/nosotros" },
-            { conectate: "/conectate" },
-            { blog: "//" },
-            { contacto: "/contacto" },
+            { name: "inicio", link: "/" },
+            { name: "nosotros", link: "/nosotros" },
+            { name: "conéctate", link: "/conectate" },
+            { name: "blog", link: "//" },
+            { name: "contacto", link: "/contacto" },
           ].map((item, i) => {
-            if (Object.keys(item)[0] === "blog") {
+            if (item.name === "blog") {
               return (
                 <div key={i} className="cursor-default">
-                  {Object.keys(item)[0]}
+                  {item.name}
                 </div>
               );
             }
@@ -87,7 +87,7 @@ const Header = () => {
               <div
                 key={i}
                 className={` ${
-                  Object.keys(item)[0] === "conectate" && "conectate relative"
+                  item.name === "conectate" && "conectate relative"
                 }`}
               >
                 <Link
@@ -96,10 +96,10 @@ const Header = () => {
                     pathname === Object.values(item)[0] && "text-pink-300"
                   }`}
                 >
-                  {Object.keys(item)[0]}
+                  {item.name}
                 </Link>
 
-                {Object.keys(item)[0] === "conectate" && <OtroMenu />}
+                {item.name === "conectate" && <OtroMenu />}
               </div>
             );
           })}

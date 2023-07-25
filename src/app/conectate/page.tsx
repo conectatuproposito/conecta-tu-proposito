@@ -38,7 +38,7 @@ export default function Contactate() {
         </div>
         <div className="flex gap-4 mt-4">
           <Button href="/contacto" className="md:w-[350px]">
-            contacta ahora
+            Conéctate ahora
           </Button>
           <button
             className="
@@ -77,7 +77,7 @@ export default function Contactate() {
         </div>
         <div>
           <Button href="/contacto" className="mt-2">
-            Contacta ahora
+            Conéctate ahora
           </Button>
         </div>
       </Article>
@@ -109,7 +109,7 @@ export default function Contactate() {
         </div>
         <div>
           <Button href="/contacto" className="mt-2">
-            Contacta ahora
+            Conéctate ahora
           </Button>
         </div>
       </Article>
@@ -133,7 +133,7 @@ export default function Contactate() {
         </div>
         <div>
           <Button href="/contacto" className="mt-2">
-            Contacta ahora
+            Conéctate ahora
           </Button>
         </div>
       </Article>
