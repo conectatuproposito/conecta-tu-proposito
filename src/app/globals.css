@@ -68,3 +68,11 @@ body {
   );
   padding: 2px;
 }
+
+.conectate:hover > a {
+  color: pink;
+}
+
+.conectate:hover svg {
+  fill: pink;
+}

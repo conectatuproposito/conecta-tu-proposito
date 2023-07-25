@@ -8,6 +8,11 @@ import Hamburg from "@/components/Hamburg";
 import { motion } from "framer-motion";
 
 import "./style.css";
+import Instagram from "../svgs/Instagram";
+import Facebook from "../svgs/Facebook";
+import Twitter from "../svgs/Twitter";
+import Linkedin from "../svgs/Linkedin";
+import Arrow from "../svgs/Arrow";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -87,62 +92,39 @@ const Header = () => {
               <div
                 key={i}
                 className={` ${
-                  item.name === "conectate" && "conectate relative"
-                }`}
+                  item.name === "conéctate" && "conectate relative"
+                } transition-all`}
               >
                 <Link
                   href={item.link}
                   className={`hover:text-pink-300 ${
                     pathname === item.name && "text-pink-300"
-                  }`}
+                  } flex items-center transition-all`}
                 >
                   {item.name}
+                  {item.name === "conéctate" && <Arrow className="ml-1" />}
                 </Link>
 
-                {item.name === "conectate" && <OtroMenu />}
+                {item.name === "conéctate" && <OtroMenu />}
               </div>
             );
           })}
 
           <div className={`flex flex-row gap-5 text-black transition-all`}>
             <a href="" target="_blank" className="hover:text-gray-200 w-6">
-              <Image
-                src="/instagram.svg"
-                alt="Instagram Logo"
-                width={22}
-                height={22}
-                priority
-              />
+              <Instagram className="fill-sky-300 hover:fill-pink-300 transition-all" />
             </a>
 
-            <a href="" target="_blank" className="hover:text-gray-200">
-              <Image
-                src="/linkedin.svg"
-                alt="Linkedin Logo"
-                width={22}
-                height={22}
-                priority
-              />
+            <a href="" target="_blank" className="hover:text-gray-200 w-6">
+              <Facebook className="fill-sky-300 hover:fill-pink-300 transition-all" />
             </a>
 
-            <a href="" target="_blank" className="hover:text-gray-200">
-              <Image
-                src="/twitter.svg"
-                alt="twitter Logo"
-                width={22}
-                height={22}
-                priority
-              />
+            <a href="" target="_blank" className="hover:text-gray-200 w-6">
+              <Twitter className="fill-sky-300 hover:fill-pink-300 transition-all" />
             </a>
 
-            <a href="" target="_blank" className="hover:text-gray-200">
-              <Image
-                src="/facebook.svg"
-                alt="facebook Logo"
-                width={22}
-                height={22}
-                priority
-              />
+            <a href="" target="_blank" className="hover:text-gray-200 w-6">
+              <Linkedin className="fill-sky-300 hover:fill-pink-300 transition-all" />
             </a>
           </div>
         </nav>

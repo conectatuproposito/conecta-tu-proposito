@@ -6,6 +6,10 @@ import Subscription from "../Subscription";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import Instagram from "../svgs/Instagram";
+import Facebook from "../svgs/Facebook";
+import Twitter from "../svgs/Twitter";
+import Linkedin from "../svgs/Linkedin";
 
 const Footer = () => {
   const [reloadAnimation, setReloadAnimation] = useState(true);
@@ -121,45 +125,21 @@ const Footer = () => {
               Síguenos en redes sociales
             </div>
 
-            <div className={`flex flex-row gap-12 text-black transition-all`}>
+            <div className="flex flex-row gap-12 text-black transition-all">
               <a href="" target="_blank" className="hover:text-gray-200 w-6">
-                <Image
-                  src="/instagram.svg"
-                  alt="Instagram Logo"
-                  width={22}
-                  height={22}
-                  priority
-                />
+                <Instagram className="fill-black hover:fill-pink-300" />
               </a>
 
-              <a href="" target="_blank" className="hover:text-gray-200">
-                <Image
-                  src="/linkedin.svg"
-                  alt="Linkedin Logo"
-                  width={22}
-                  height={22}
-                  priority
-                />
+              <a href="" target="_blank" className="hover:text-gray-200 w-6">
+                <Facebook className="fill-black hover:fill-pink-300" />
               </a>
 
-              <a href="" target="_blank" className="hover:text-gray-200">
-                <Image
-                  src="/twitter.svg"
-                  alt="twitter Logo"
-                  width={22}
-                  height={22}
-                  priority
-                />
+              <a href="" target="_blank" className="hover:text-gray-200 w-6">
+                <Twitter className="fill-black hover:fill-pink-300" />
               </a>
 
-              <a href="" target="_blank" className="hover:text-gray-200">
-                <Image
-                  src="/facebook.svg"
-                  alt="facebook Logo"
-                  width={22}
-                  height={22}
-                  priority
-                />
+              <a href="" target="_blank" className="hover:text-gray-200 w-6">
+                <Linkedin className="fill-black hover:fill-pink-300" />
               </a>
             </div>
           </div>
