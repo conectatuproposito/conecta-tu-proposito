@@ -5,47 +5,87 @@ import AnimationMain from "@/components/AnimationDiv";
 
 export default function Home() {
   return (
-    <AnimationMain className="flex flex-col items-center justify-between m-auto overflow-hidden">
+    <AnimationMain
+      className="
+        flex flex-col items-center justify-between m-auto overflow-hidden
+      "
+    >
       <div
-        className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto md:my-20
-          w-full xl:max-w-screen-xl p-4 xl:p-0 
+        className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto w-full    
+          md:mt-[4.2%] 
+          lg:pl-[7%]                           
+          xl:max-w-screen-xl xl:mt-[5.2%] xl:pl-[1%]        
         "
       >
-        <div className="my-auto order-2 md:order-1">
-          <div className="text-3xl leading-10 sm:text-[54px] sm:leading-[3.7rem] font-extrabold mb-4">
+        <div className="order-2 md:order-1 p-5 lg:p-0">
+          <div
+            className=" font-extrabold mb-4           
+              text-[2rem] leading-[2.75rem]   
+              md:text-[1.8rem] md:leading-[2.5rem]   
+              lg:text-[2.5rem] lg:leading-[2.75rem]   
+              xl:text-5xl xl:leading-[3.25rem]        
+            "
+          >
             Diseña y proyecta el ser <br /> humano que hay en ti…
           </div>
-          <div className="text-xl sm:text-3xl font-semibold mb-8">
+          <div
+            className=" font-semibold mb-6            
+              md:text-xl 
+              lg:text-2xl 
+              xl:text-[1.72rem] xl:leading-[2.25rem]  
+            "
+          >
             Elevar el ancla, una opción que siempre <br />
             tendrás disponible en tu vida.
           </div>
-          <Button href="/contacto">Conecta con tu proposito</Button>
+          <Button href="/contacto" className="sm:w-[430px]">
+            Conecta con tu proposito
+          </Button>
         </div>
-        <div className="order-1 md:order-2 relative min-h-[320px]">
+
+        <div
+          className="order-1 md:order-2 relative 
+            min-h-[300px]
+            lg:min-h-[350px]
+          "
+        >
           <Image
-            src="/home1.png"
+            src="/home-1.png"
             alt="Home 1"
-            width={400}
-            height={400}
-            className="absolute max-w-[500px] w-full md:scale-[1.40] -top-12 md:-top-10"
+            width={1000}
+            height={1000}
+            className="absolute pointer-events-none
+              w-full 
+              md:scale-[1.1] md:-top-[25px] md:left-[18px]
+              lg:scale-[1.25] lg:-top-[16px] lg:left-[8px]
+              xl:scale-[1.4] xl:-top-[4%] xl:left-[2%]
+            "
             priority
           />
         </div>
       </div>
 
-      <div className="text-center  xl:max-w-screen-xl mt-12 md:mt-28  mx-auto p-4 xl:p-0 ">
+      <div
+        className="text-center mx-auto p-4 mt-7
+          text-[1.275rem] leading-[1.5rem]
+          lg:mt-0
+          xl:p-0 xl:mt-28
+          xl:max-w-screen-xl"
+      >
         <Image
           src="/isotipo.png"
           alt="isotipo"
-          width={96}
+          width={116}
           height={96}
           priority
-          className="m-auto mb-3"
+          className="m-auto"
         />
 
         <div
-          className="text-5xl font-bold mb-4
+          className="font-bold mt-2 mb-4
             bg-gradient-to-b from-blue-400 to-purple-500 bg-clip-text text-transparent
+            md:text-4xl
+            lg:text-5xl
           "
         >
           Un Itinerario personal <br />
@@ -66,34 +106,36 @@ export default function Home() {
           width={1031}
           height={408}
           priority
-          className="mx-auto my-14"
+          className="mx-auto mt-[4.3rem] mb-[6rem]"
         />
       </div>
 
       <div className="xl:max-w-screen-xl mt-6 mb-20 mx-auto p-4 xl:p-0 ">
         <div className="grid md:grid-cols-2 gap-4">
-          <div className="mb-8">
+          <div className="mb-8 pl-[2%]">
             <div
-              className="text-5xl font-bold mb-4
+              className=" md:text-4xl lg:text-5xl font-bold
                 bg-gradient-to-b from-blue-400 to-purple-500 bg-clip-text text-transparent
             "
             >
               Nos conectamos con tus <br /> necesidades
             </div>
-            <div className="mb-4 text-xl font-semibold">
+            <div className="mt-5 text-[1.75rem] leading-[2rem] font-semibold">
               En conecta tu propósito, marcamos la diferencia con un enfoque
               humano y personalizado.
             </div>
-            <div className="text-4xl font-bold mb-4">
+            <div className="text-4xl font-bold mt-9">
               Conecta es un itinerario
             </div>
-            <div className="mb-4">
+            <div className="mt-2 text-[1.275rem] leading-[1.5rem]">
               El ser humano no puede reducirse unilateralmente a una dimensión o
               a una parte de su ser, hablar del individuo, de la persona, cada
               vez está encontrando un eco mayor en todos los ámbitos de la vida,
               no puede limitarse simplemente a una dimensión que lo caracteriza,
               teniéndose que prestar atención a todas las realidades, como lo
               son la dimensión biológica, psicológica, social y espiritual.
+            </div>
+            <div className="mt-7 text-[1.275rem] leading-[1.5rem]">
               Descubre la forma de poder, integrar y unificar todas las
               dimensiones; proyectando, diseñando y edificando el ser humano que
               estás llamado a ser.
@@ -109,7 +151,7 @@ export default function Home() {
           />
         </div>
         <div>
-          <Button href="/contacto" className="m-auto">
+          <Button href="/contacto" className="m-auto sm:w-[430px]">
             Conoce más
           </Button>
         </div>
@@ -153,7 +195,7 @@ export default function Home() {
 }
 
 const imageClassName =
-  " w-full relative hover:scale-[1.66] top-0 hover:top-[41%] card-transition";
+  " w-full relative hover:scale-[1.9] top-0 hover:top-[30%] card-transition";
 
 const Card = ({
   image,

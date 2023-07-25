@@ -31,7 +31,7 @@ const Footer = () => {
         }}
         className="xl:max-w-screen-xl mx-auto"
       >
-        <div className="flex flex-col md:flex-row justify-between gap-6 pt-8 px-4">
+        <div className="flex flex-col md:flex-row justify-between gap-6 pt-24 px-4">
           <div className="text-center md:text-left">
             <div className="text-xl font-bold">
               <Image
@@ -45,9 +45,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-2 md:gap-8">
+          <div className="grid grid-cols-3 gap-2 md:gap-14">
             <div>
-              <div className="text-xl text-purple-700 uppercase">Website</div>
+              <div className="text-md text-purple-700 uppercase">Website</div>
               <div className="flex flex-col">
                 <Link href="/" className=" hover:text-purple-700">
                   inicio
@@ -65,7 +65,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <div className="text-xl text-purple-700 uppercase">Pronto</div>
+              <div className="text-md text-purple-700 uppercase">Pronto</div>
               <div>
                 <div className="">Blog</div>
                 <div className="">Escuela conecta</div>
@@ -74,7 +74,7 @@ const Footer = () => {
             </div>
 
             <div className=" flex flex-col">
-              <div className="text-xl  text-purple-700 uppercase">Aliados</div>
+              <div className="text-md  text-purple-700 uppercase">Aliados</div>
               <a href="/" className=" hover:text-purple-700">
                 Happines Mark
               </a>
@@ -92,7 +92,7 @@ const Footer = () => {
           </div>
 
           <div className="text-center md:text-left">
-            <div className="text-xl text-purple-700 uppercase">Contacto</div>
+            <div className="text-md text-purple-700 uppercase">Contacto</div>
             <div>
               <div>
                 {/* <img src="/path/to/img" alt="icon" className="h-6" /> */}
@@ -110,7 +110,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center py-8 px-4 ">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 pb-16 px-4 ">
           <div></div>
           <div></div>
 
@@ -121,7 +121,7 @@ const Footer = () => {
               Síguenos en redes sociales
             </div>
 
-            <div className={`flex flex-row gap-4 text-black transition-all`}>
+            <div className={`flex flex-row gap-12 text-black transition-all`}>
               <a href="" target="_blank" className="hover:text-gray-200 w-6">
                 <Image
                   src="/instagram.svg"

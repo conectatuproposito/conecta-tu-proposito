@@ -34,12 +34,17 @@ const Header = () => {
           opacity: 1,
         },
       }}
-      className="bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700 md:h-20 transition-all"
+      className="
+        bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700 md:h-20 transition-all
+      "
     >
       <div
-        className={`flex flex-col md:flex-row w-full md:justify-around mx-auto items-center  uppercase p-4 md:p-0 md:py-4`}
+        className="
+          flex flex-col  items-center justify-between w-full uppercase p-5
+          md:pl-[7%] md:pr-[5%] md:flex-row md:h-20 sm:p-0
+          "
       >
-        <div className="flex justify-between md:justify-around w-full  md:w-auto items-center">
+        <div className="flex justify-between md:justify-around w-full items-center md:w-auto">
           <Link className="h-fit" href="/">
             <Image
               src="/logo.svg"
@@ -57,9 +62,11 @@ const Header = () => {
         </div>
 
         <nav
-          className={` flex flex-row flex-wrap gap-4 text-black ${
-            !isMenuOpen && "hidden md:flex"
-          } mt-4 md:mt-0 transition-all`}
+          className={` flex flex-row flex-wrap  text-black content-center 
+            gap-4 gap-y-2 
+            md:justify-end md:gap-y-0.5 
+            lg:gap-10 
+           ${!isMenuOpen && "hidden md:flex"} mt-4 md:mt-0 transition-all`}
         >
           {[
             { inicio: "/" },
@@ -97,7 +104,7 @@ const Header = () => {
             );
           })}
 
-          <div className={`flex flex-row gap-4 text-black transition-all`}>
+          <div className={`flex flex-row gap-5 text-black transition-all`}>
             <a href="" target="_blank" className="hover:text-gray-200 w-6">
               <Image
                 src="/instagram.svg"
@@ -147,7 +154,11 @@ const Header = () => {
 export default Header;
 
 const OtroMenu = () => (
-  <div className="otro-menu absolute z-10 text-black w-60 hidden md:block ">
+  <div
+    className="
+      otro-menu absolute z-10 text-black w-60 hidden lg:block 
+    "
+  >
     <div className="h-2 bg-pink-300 rounded-t-xl " />
     <div className="flex flex-col gap-4 bg-[#D4EBF150] p-3">
       <Link
