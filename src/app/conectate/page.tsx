@@ -225,24 +225,25 @@ const Article = ({
       >
         <div
           className={`flex flex-col ${
-            direction === "left" &&
-            "sm:ml-[14%] md:ml-[14%] lg:ml-[14%] xl:ml-[14%]"
+            direction === "left" && " lg:ml-[14%] xl:ml-[14%]"
           } 
-          sm:my-[8%] md:my-[8%] lg:my-[6%] xl:my-[8%]
+          m-5 
+          md:ml-8
+          lg:my-[6%] 
+          xl:my-[8%]
            `}
         >
           <h3
             className="text-5xl font-bold bg-gradient-to-b 
               from-blue-400 to-purple-500 bg-clip-text text-transparent
-              lg:mb-2
-              lg:text-4xl xl:mb-4
+              mb-3
+              lg:mb-2 lg:text-4xl xl:mb-4
               "
           >
             {title}
           </h3>
           <div
-            className="flex flex-col
-              leading-[1.123rem]
+            className="flex flex-col leading-[1.123rem]
               lg:text-[0.99rem]
               xl:text-xl xl:leading-[1.75rem]  
             "
