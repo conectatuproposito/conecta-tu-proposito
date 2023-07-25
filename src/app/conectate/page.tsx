@@ -3,61 +3,7 @@ import AnimationMain from "@/components/AnimationDiv";
 import Button from "@/components/Button";
 import Image from "next/image";
 
-const Article = ({
-  id,
-  title,
-  children,
-  image,
-  direction,
-}: {
-  id?: string;
-  title: string;
-  children: React.ReactNode;
-  image: string;
-  direction: "left" | "right";
-}) => {
-  return (
-    <div id={id} className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div
-        className={`order-2 ${
-          direction === "left" ? "md:order-1" : "md:order-2"
-        }`}
-      >
-        <div className="m-2 lg:m-14 xl:mx-[15%] xl:my-[20%] ">
-          <h3
-            className="text-5xl font-bold mb-4 bg-gradient-to-b 
-              from-blue-400 to-purple-500 bg-clip-text text-transparent
-              "
-          >
-            {title}
-          </h3>
-          {children}
-        </div>
-      </div>
-      <div
-        className={`order-1 ${
-          direction === "left" ? "md:order-2" : "md:order-1"
-        }`}
-      >
-        <div
-          className={`linea-gradient ${direction === "right" && "reverse"}`}
-        />
-        <div
-          className={`w-full md:h-full h-96 `}
-          style={{
-            backgroundImage: `linear-gradient(${
-              direction === "right" ? "90deg" : "270deg"
-            }, rgba(255,255,255,0) 50%, rgba(240,242,255,1) 99%), url(/${image}.png)`,
-            backgroundSize: "cover",
-          }}
-        />
-        <div
-          className={`linea-gradient ${direction === "right" && "reverse"}`}
-        />
-      </div>
-    </div>
-  );
-};
+const classTextNormal = "text-[1.25rem] leading-[1.75rem]";
 
 export default function Contactate() {
   const handleOpenImage = () => {
@@ -72,7 +18,7 @@ export default function Contactate() {
         image="service-1"
         direction="left"
       >
-        <div className="mb-4">
+        <div>
           Metodología desarrollada en Oxford Inglaterra por IOpener Institute,
           que permite transformar la forma en que las organizaciones evalúan,
           analizan y actúan con la información de desempeño de sus
@@ -82,7 +28,7 @@ export default function Contactate() {
           personas, logrando mejores resultados económicos y productivos en la
           organización.
         </div>
-        <div className="font-semibold mb-4">
+        <div className="mt-6 font-semibold mb-4">
           El capital humano es el activo número 1 de tu empresa, y la suma de
           este capital es lo que permite alcanzar los resultados.
         </div>
@@ -91,14 +37,14 @@ export default function Contactate() {
           desempeño y la felicidad en el trabajo?
         </div>
         <div className="flex gap-4 mt-4">
-          <Button href="/contacto" className="md:w-[280px]">
+          <Button href="/contacto" className="md:w-[350px]">
             contacta ahora
           </Button>
           <button
-            className={`
-                    flex items-center justify-center h-11
-                  text-white rounded-full px-10 w-56
-                  bg-sky-400 hover:bg-pink-300 transition-all`}
+            className="
+              flex items-center justify-center h-11
+            text-white rounded-full px-10 w-56
+            bg-sky-400 hover:bg-pink-300 transition-all"
             onClick={handleOpenImage}
           >
             Ver certificado
@@ -122,7 +68,7 @@ export default function Contactate() {
           y familiares.
         </div>
         <div className="mb-4">
-          <ul className="list-disc pl-5">
+          <ul className="list-disc pl-6">
             <li>Vivir Inteligentemente Saludable</li>
             <li>Familia Inteligentemente Saludable</li>
             <li>Jóvenes Inteligentemente Saludables</li>
@@ -130,7 +76,9 @@ export default function Contactate() {
           </ul>
         </div>
         <div>
-          <Button href="/contacto">Contacta ahora</Button>
+          <Button href="/contacto" className="mt-2">
+            Contacta ahora
+          </Button>
         </div>
       </Article>
       <Article
@@ -153,14 +101,16 @@ export default function Contactate() {
           espiritual.
         </div>
         <div className="mb-4">
-          <ul className="list-disc pl-5">
+          <ul className="list-disc pl-6">
             <li>Intervenciones personalizadas</li>
             <li>Vida con sentido</li>
             <li>Conecta tu vida</li>
           </ul>
         </div>
         <div>
-          <Button href="/contacto">Contacta ahora</Button>
+          <Button href="/contacto" className="mt-2">
+            Contacta ahora
+          </Button>
         </div>
       </Article>
 
@@ -182,7 +132,9 @@ export default function Contactate() {
           desarrollo y felicidad en el trabajo.
         </div>
         <div>
-          <Button href="/contacto">Contacta ahora</Button>
+          <Button href="/contacto" className="mt-2">
+            Contacta ahora
+          </Button>
         </div>
       </Article>
       <div>
@@ -239,6 +191,66 @@ export default function Contactate() {
     </AnimationMain>
   );
 }
+
+const Article = ({
+  id,
+  title,
+  children,
+  image,
+  direction,
+}: {
+  id?: string;
+  title: string;
+  children: React.ReactNode;
+  image: string;
+  direction: "left" | "right";
+}) => {
+  return (
+    <div id={id} className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div
+        className={`order-2 ${
+          direction === "left" ? "md:order-1" : "md:order-2"
+        }`}
+      >
+        <div
+          className={`flex flex-col ${
+            direction === "left" && "xl:ml-[14%]"
+          } xl:my-[8%] `}
+        >
+          <h3
+            className="text-5xl font-bold mb-4 bg-gradient-to-b 
+              from-blue-400 to-purple-500 bg-clip-text text-transparent
+              "
+          >
+            {title}
+          </h3>
+          <div className={` ${classTextNormal} flex flex-col `}>{children}</div>
+        </div>
+      </div>
+      <div
+        className={`order-1 ${
+          direction === "left" ? "md:order-2" : "md:order-1"
+        }`}
+      >
+        <div
+          className={`linea-gradient ${direction === "right" && "reverse"}`}
+        />
+        <div
+          className={`w-full md:h-full h-96 `}
+          style={{
+            backgroundImage: `linear-gradient(${
+              direction === "right" ? "90deg" : "270deg"
+            }, rgba(255,255,255,0) 50%, rgba(240,242,255,1) 99%), url(/${image}.png)`,
+            backgroundSize: "cover",
+          }}
+        />
+        <div
+          className={`linea-gradient ${direction === "right" && "reverse"}`}
+        />
+      </div>
+    </div>
+  );
+};
 
 const Card = ({
   children,
