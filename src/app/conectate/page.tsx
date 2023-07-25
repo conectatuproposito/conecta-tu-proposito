@@ -3,22 +3,26 @@ import AnimationMain from "@/components/AnimationDiv";
 import Button from "@/components/Button";
 import Image from "next/image";
 
-const classTextNormal = "text-[1.25rem] leading-[1.75rem]";
-
 export default function Contactate() {
   const handleOpenImage = () => {
     window.open("/certificado.jpeg", "_blank");
   };
 
   return (
-    <AnimationMain className="flex flex-col m-auto xl:p-0 gap-10 xl:gap-28 overflow-hidden">
+    <AnimationMain
+      className="
+        flex flex-col m-auto gap-10 overflow-hidden
+        xl:gap-28  max-w-[1440px]
+        
+      "
+    >
       <Article
         id="modelo"
         title="Modelo de desempeño"
         image="service-1"
         direction="left"
       >
-        <div>
+        <div className="">
           Metodología desarrollada en Oxford Inglaterra por IOpener Institute,
           que permite transformar la forma en que las organizaciones evalúan,
           analizan y actúan con la información de desempeño de sus
@@ -206,7 +210,14 @@ const Article = ({
   direction: "left" | "right";
 }) => {
   return (
-    <div id={id} className="grid grid-cols-1 md:grid-cols-2 gap-5">
+    <div
+      id={id}
+      className="
+        grid grid-cols-1 gap-5 
+        md:grid-cols-2 
+        lg:gap-3
+      "
+    >
       <div
         className={`order-2 ${
           direction === "left" ? "md:order-1" : "md:order-2"
@@ -214,17 +225,30 @@ const Article = ({
       >
         <div
           className={`flex flex-col ${
-            direction === "left" && "xl:ml-[14%]"
-          } xl:my-[8%] `}
+            direction === "left" &&
+            "sm:ml-[14%] md:ml-[14%] lg:ml-[14%] xl:ml-[14%]"
+          } 
+          sm:my-[8%] md:my-[8%] lg:my-[6%] xl:my-[8%]
+           `}
         >
           <h3
-            className="text-5xl font-bold mb-4 bg-gradient-to-b 
+            className="text-5xl font-bold bg-gradient-to-b 
               from-blue-400 to-purple-500 bg-clip-text text-transparent
+              lg:mb-2
+              lg:text-4xl xl:mb-4
               "
           >
             {title}
           </h3>
-          <div className={` ${classTextNormal} flex flex-col `}>{children}</div>
+          <div
+            className="flex flex-col
+              leading-[1.123rem]
+              lg:text-[0.99rem]
+              xl:text-xl xl:leading-[1.75rem]  
+            "
+          >
+            {children}
+          </div>
         </div>
       </div>
       <div
