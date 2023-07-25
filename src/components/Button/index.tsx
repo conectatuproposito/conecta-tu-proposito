@@ -5,12 +5,12 @@ interface IButton {
   children: React.ReactNode;
   className?: string;
   href: string;
+  target: string;
 }
 
-const Button = ({ children, href, className, ...args }: IButton) => {
+const Button = ({ children, className, ...args }: IButton) => {
   return (
     <Link
-      href={href}
       className={`
         flex items-center justify-center  sm:w-[354px] h-11
         text-white rounded-full p-2 px-6

@@ -41,7 +41,11 @@ export default function Contactate() {
           desempeño y la felicidad en el trabajo?
         </div>
         <div className="flex gap-4 mt-4">
-          <Button href="/contacto" className="md:w-[350px]">
+          <Button
+            target="_blank"
+            href="https://wa.me/573107675203?text=Estoy%20interesado%20en%20su%20contacto"
+            className="md:w-[350px]"
+          >
             Conéctate ahora
           </Button>
           <button
@@ -80,7 +84,11 @@ export default function Contactate() {
           </ul>
         </div>
         <div>
-          <Button href="/contacto" className="mt-2">
+          <Button
+            target="_blank"
+            href="https://wa.me/573107675203?text=Estoy%20interesado%20en%20su%20contacto"
+            className="mt-2"
+          >
             Conéctate ahora
           </Button>
         </div>
@@ -112,7 +120,11 @@ export default function Contactate() {
           </ul>
         </div>
         <div>
-          <Button href="/contacto" className="mt-2">
+          <Button
+            target="_blank"
+            href="https://wa.me/573107675203?text=Estoy%20interesado%20en%20su%20contacto"
+            className="mt-2"
+          >
             Conéctate ahora
           </Button>
         </div>
@@ -136,7 +148,11 @@ export default function Contactate() {
           desarrollo y felicidad en el trabajo.
         </div>
         <div>
-          <Button href="/contacto" className="mt-2">
+          <Button
+            target="_blank"
+            href="https://wa.me/573107675203?text=Estoy%20interesado%20en%20su%20contacto"
+            className="mt-2"
+          >
             Conéctate ahora
           </Button>
         </div>
