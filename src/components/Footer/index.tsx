@@ -75,18 +75,12 @@ const Footer = () => {
 
             <div className=" flex flex-col">
               <div className="text-md  text-purple-700 uppercase">Aliados</div>
-              <a href="/" className=" hover:text-purple-700">
-                Happines Mark
-              </a>
+
               <a
                 href="https://www.iopenerinstitute.com/happiness-at-work-what"
                 className=" hover:text-purple-700"
               >
-                i Opener Institute
-              </a>
-
-              <a href="/" className=" hover:text-purple-700">
-                Dicio
+                IOpener Institute
               </a>
             </div>
           </div>

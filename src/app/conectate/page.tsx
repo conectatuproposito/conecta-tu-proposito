@@ -97,11 +97,11 @@ export default function Contactate() {
           <button
             className={`
                     flex items-center justify-center h-11
-                  text-white rounded-full px-10
-                  bg-sky-400 hover:bg-violet-950 transition-all`}
+                  text-white rounded-full px-10 w-56
+                  bg-sky-400 hover:bg-pink-300 transition-all`}
             onClick={handleOpenImage}
           >
-            ver certificado
+            Ver certificado
           </button>
         </div>
       </Article>

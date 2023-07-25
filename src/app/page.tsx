@@ -39,7 +39,7 @@ export default function Home() {
             tendrás disponible en tu vida.
           </div>
           <Button href="/contacto" className="sm:w-[430px]">
-            Conecta con tu proposito
+            Conectar tu propósito
           </Button>
         </div>
 
@@ -183,9 +183,9 @@ export default function Home() {
             <div className="text-xl font-bold mb-2">Psicoterapia</div>
 
             <ul className="list-disc pl-5">
-              <li>Auto-desempeño y felicidad en el trabajo</li>
-              <li>Medición individual y de equipo</li>
-              <li>Planes de acción</li>
+              <li>Intervenciones personalizadas</li>
+              <li>Vida con sentido</li>
+              <li>Conecta tu vida</li>
             </ul>
           </Card>
         </div>
@@ -206,7 +206,7 @@ const Card = ({
   children: React.ReactNode;
   href: string;
 }) => (
-  <div className="w-[320px] rounded-[30px] mx-auto bg-white overflow-hidden cursor-pointer">
+  <div className="w-[365px] rounded-[30px] mx-auto bg-white overflow-hidden cursor-pointer">
     <div className="h-40 overflow-hidden hover:overflow-visible">
       <Image
         className={imageClassName}
@@ -222,7 +222,10 @@ const Card = ({
       {children}
 
       <div className="text-end">
-        <Link className="text-purple-700 hover:text-purple-900" href={href}>
+        <Link
+          className="text-purple-700 hover:text-purple-900 font-bold"
+          href={href}
+        >
           ver más +
         </Link>
       </div>
