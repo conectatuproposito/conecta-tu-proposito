@@ -27,9 +27,6 @@ const Footer = () => {
           },
           visible: {
             opacity: 1,
-            transition: {
-              delay: 0.5,
-            },
           },
         }}
         className="xl:max-w-screen-xl mx-auto"

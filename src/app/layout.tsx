@@ -20,7 +20,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  console.log({ args });
   return (
     <html lang="en">
       <body className={nunito.className + " bg-[rgba(240,242,255,1)]"}>
