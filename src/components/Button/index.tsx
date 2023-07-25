@@ -5,7 +5,7 @@ interface IButton {
   children: React.ReactNode;
   className?: string;
   href: string;
-  target: string;
+  target?: string;
 }
 
 const Button = ({ children, className, ...args }: IButton) => {

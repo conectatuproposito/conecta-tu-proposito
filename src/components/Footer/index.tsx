@@ -60,16 +60,16 @@ const Footer = () => {
               <div className="text-md text-purple-700 uppercase">Website</div>
               <div className="flex flex-col">
                 <Link href="/" className=" hover:text-purple-700">
-                  inicio
+                  Inicio
                 </Link>
                 <Link href="/nosotros" className=" hover:text-purple-700">
-                  nosotros
+                  Nosotros
                 </Link>
                 <Link href="/conectate" className=" hover:text-purple-700">
-                  conectate
+                  Conectate
                 </Link>
                 <Link href="/contacto" className=" hover:text-purple-700">
-                  contacto
+                  Contacto
                 </Link>
               </div>
             </div>
