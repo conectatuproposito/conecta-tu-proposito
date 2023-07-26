@@ -171,19 +171,64 @@ const OtroMenu = () => (
       >
         Modelo de desempeño
       </Link>
-
       <Link
         className="hover:text-pink-300 cursor-pointer"
         href="/conectate#familia"
       >
-        Salud en familia
+        1 - Salud en familia
       </Link>
-
       <Link
         className="hover:text-pink-300 cursor-pointer"
         href="/conectate#ejecutivos"
       >
-        Ejecutivo
+        1 - Ejecutivo
+      </Link>
+
+      <Link
+        className="hover:text-pink-300 cursor-pointer"
+        href="/conectate#familia"
+        scroll={false}
+      >
+        2 - Salud en familia
+      </Link>
+      <Link
+        className="hover:text-pink-300 cursor-pointer"
+        href="/conectate#ejecutivos"
+        scroll={false}
+      >
+        2 - Ejecutivo
+      </Link>
+
+      <Link
+        className="hover:text-pink-300 cursor-pointer"
+        href="/conectate#familia"
+        scroll={false}
+        replace
+      >
+        3 - Salud en familia
+      </Link>
+      <Link
+        className="hover:text-pink-300 cursor-pointer"
+        href="/conectate#ejecutivos"
+        scroll={false}
+        replace
+      >
+        3 - Ejecutivo
+      </Link>
+
+      <Link
+        className="hover:text-pink-300 cursor-pointer"
+        href="https://conectatuproposito.netlify.app/conectate#familia"
+        scroll={false}
+      >
+        4 - Salud en familia
+      </Link>
+      <Link
+        className="hover:text-pink-300 cursor-pointer"
+        href="https://conectatuproposito.netlify.app/conectate#ejecutivos"
+        scroll={false}
+      >
+        4 - Ejecutivo
       </Link>
 
       <Link
