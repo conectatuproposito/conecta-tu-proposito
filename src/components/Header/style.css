@@ -1,7 +1,6 @@
 .conectate:hover .otro-menu {
   opacity: 1;
-  /* height: 216px; */
-  height: 400px;
+  height: 216px;
 }
 
 .conectate:after {
@@ -17,7 +16,6 @@
 }
 
 .otro-menu {
-  /* opacity: 0; */
   top: 47px;
   transition: all linear 0.15s;
   height: 0;
