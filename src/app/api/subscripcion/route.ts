@@ -33,9 +33,12 @@ export async function POST(request: NextRequest) {
 
   const mailOptions: Mail.Options = {
     from: process.env.EMAIL_USER,
-    to: process.env.EMAIL_USER,
+    // to: process.env.EMAIL_USER,
+
+    to: process.env.EMAIL_TO,
+
     // cc: email, (uncomment this line if you want to send a copy to the sender)
-    subject: `(${email})`,
+    subject: `Subscripcion registrada`,
     html: render(ContactTemplate(datos)),
   };
 
