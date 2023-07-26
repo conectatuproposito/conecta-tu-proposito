@@ -11,13 +11,13 @@ export default function Home() {
       "
     >
       <div
-        className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto w-full    
-          md:mt-[4.2%] 
+        className="grid grid-cols-1 gap-4 mx-auto w-full    
+          md:mt-[4.2%] md:grid-cols-2
           lg:pl-[7%]                           
           xl:max-w-screen-xl xl:mt-[5.2%] xl:pl-[1%]        
         "
       >
-        <div className="order-2 md:order-1 p-5 lg:p-0">
+        <div className="order-2 md:order-1 p-4 lg:p-0">
           <div
             className=" font-extrabold mb-4           
               text-[2rem] leading-[2.75rem]   
@@ -84,6 +84,7 @@ export default function Home() {
         <div
           className="font-bold mt-2 mb-4
             bg-gradient-to-b from-blue-400 to-purple-500 bg-clip-text text-transparent
+            text-2xl
             md:text-4xl
             lg:text-5xl
           "
@@ -106,7 +107,7 @@ export default function Home() {
           width={1031}
           height={408}
           priority
-          className="mx-auto mt-[4.3rem] mb-[6rem]"
+          className="mx-auto mt-[4.3rem] md:mb-[6rem]"
         />
       </div>
 
@@ -114,8 +115,11 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-4">
           <div className="mb-8 pl-[2%]">
             <div
-              className=" md:text-4xl lg:text-5xl font-bold
+              className="  font-bold
                 bg-gradient-to-b from-blue-400 to-purple-500 bg-clip-text text-transparent
+                text-2xl
+                md:text-4xl
+                lg:text-5xl
             "
             >
               Nos conectamos con tus <br /> necesidades
@@ -124,7 +128,7 @@ export default function Home() {
               En conecta tu propósito, marcamos la diferencia con un enfoque
               humano y personalizado.
             </div>
-            <div className="text-4xl font-bold mt-9">
+            <div className="text-2xl md:text-4xl font-bold mt-9">
               Conecta es un itinerario
             </div>
             <div className="mt-2 text-[1.275rem] leading-[1.5rem]">
