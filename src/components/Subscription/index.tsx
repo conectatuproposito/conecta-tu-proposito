@@ -32,9 +32,6 @@ const Subscription = () => {
         console.log({ err });
         setError(true);
         setValue("email", "Algo salio mal, algo salio mal");
-      })
-      .finally(() => {
-        setEnviando(false);
       });
   }
 
@@ -51,7 +48,8 @@ const Subscription = () => {
             type="email"
             placeholder="ejemplo@dominio.com"
             className={`
-              h-8 w-full border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md rounded-s-[30px] 
+              h-8 w-full border border-gray-300 bg-white py-3 px-6 text-base font-medium  outline-none focus:border-purple-500 focus:shadow-md rounded-s-[30px] 
+              ${!(enviado || error) ? "text-gray-700" : ""}
               ${enviado ? "text-[#3ABBED] uppercase" : ""} ${
               error ? "text-[#E73D5C] uppercase" : ""
             } 
@@ -65,6 +63,7 @@ const Subscription = () => {
           disabled={enviando}
           className={`
             h-8 w-8 self-end rounded-e-[30px] flex items-center text-white hover:bg-sky-400 transition-all 
+            disabled:bg-slate-500
             ${!(enviado || error) ? "bg-[#6D2EA3]" : ""}
              ${enviado ? "bg-[#3ABBED]" : ""} ${error ? "bg-[#E73D5C]" : ""}
           `}

@@ -48,9 +48,6 @@ const Contact: FC = () => {
       .catch((err) => {
         console.log({ err });
         setError(err);
-      })
-      .finally(() => {
-        setEnviando(false);
       });
   }
 
