@@ -52,8 +52,8 @@ const Subscription = () => {
             placeholder="example@domain.com"
             className={`
               h-8 w-full border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md rounded-s-[30px] 
-              ${enviado && "text-[#3ABBED] uppercase"} ${
-              error && "text-[#E73D5C] uppercase"
+              ${enviado ? "text-[#3ABBED] uppercase" : ""} ${
+              error ? "text-[#E73D5C] uppercase" : ""
             } 
               transition-all
             `}

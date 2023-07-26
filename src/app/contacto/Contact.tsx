@@ -145,14 +145,17 @@ const Contact: FC = () => {
         className={`
       flex items-center justify-center  sm:w-[354px] h-11
       text-white rounded-full p-2 px-6
-      bg-purple-800 hover:bg-sky-400 transition-all m-auto`}
+      hover:bg-[#3ABBED]
+      ${!(enviado || error) ? "bg-[#6D2EA3]" : ""}
+      ${enviado ? "bg-[#3ABBED]" : ""} ${error ? "bg-[#E73D5C]" : ""}
+      transition-all m-auto`}
         disabled={enviando}
       >
         {enviado ? "Enviado" : "Enviar"}
         <Image
-          src="/arrow-right.svg"
+          src={enviado ? "/check.svg" : "/arrow-right.svg"}
           alt="Arrow Right"
-          className="pt-[2px] ml-2 w-4 h-4"
+          className={`pt-[2px] ml-2 w-4 h-4  ${enviado ? "-mt-1" : ""} `}
           width={18}
           height={18}
           priority
