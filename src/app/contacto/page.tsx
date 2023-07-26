@@ -5,8 +5,12 @@ import AnimationMain from "@/components/AnimationDiv";
 export default function Contacto() {
   return (
     <AnimationMain className="flex flex-col xl:max-w-screen-xl m-auto p-4 xl:p-0 ">
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-16">
-        <div className="order-2 md:order-1">
+      <div
+        className="grid grid-cols-1  mt-16 
+          md:grid-cols-2
+        "
+      >
+        <div className="order-2 md:order-1 lg:max-w-lg">
           <div>
             <Image
               src="/icon-person.png"
@@ -22,9 +26,9 @@ export default function Contacto() {
             >
               Hablemos...
             </h2>
-            <div className="mb-4 text-xl font-semibold">
-              Ven y descubre que no existen cambios radicales, ni realidades
-              terminadas.
+            <div className="mb-4 text-[22px] font-semibold">
+              Ven y descubre que no existen cambios radicales, <br />
+              ni realidades terminadas.
             </div>
             <div>
               En conecta tu propósito, marcamos la diferencia con un enfoque
