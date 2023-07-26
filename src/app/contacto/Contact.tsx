@@ -22,7 +22,6 @@ const inputClassName = `
   outline-none focus:border-purple-500 
   focus:shadow-md
   focus:border-purple-700 
-  focus:border-transparent
   trasition-all
 `;
 
