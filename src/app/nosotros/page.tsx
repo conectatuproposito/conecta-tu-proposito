@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Nosotros() {
   return (
     <AnimationMain className="bg-[#F0F2FF]">
-      <div className="flex flex-col m-auto ">
+      <div className="flex flex-col m-auto max-w-[1440px]">
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 md:mb-16  ">
           <div className="order-2 md:order-1">
             <div
@@ -40,9 +40,9 @@ export default function Nosotros() {
           </div>
           <div className="order-1 md:order-2 ">
             <div
-              className="w-full md:h-full h-96 reverse"
+              className="w-full md:h-full h-96"
               style={{
-                backgroundImage: `linear-gradient(90deg, rgba(255,255,255,0) 50%, rgba(240,242,255,1) 100%), url(/nosotros.png)`,
+                backgroundImage: `linear-gradient(270deg, rgba(255,255,255,0) 50%, rgba(240,242,255,1) 100%), url(/nosotros.png)`,
                 backgroundSize: "cover",
               }}
             />
