@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
     from: process.env.EMAIL_USER,
     // to: process.env.EMAIL_USER,
 
-    to: process.env.EMAIL_TO,
+    to: process.env.EMAIL_TO_SUBSCIBSION,
 
     // cc: email, (uncomment this line if you want to send a copy to the sender)
     subject: `Subscripcion registrada`,

@@ -63,7 +63,6 @@ const Subscription = () => {
           disabled={enviando}
           className={`
             h-8 w-8 self-end rounded-e-[30px] flex items-center text-white hover:bg-sky-400 transition-all 
-            disabled:bg-slate-500
             ${!(enviado || error) ? "bg-[#6D2EA3]" : ""}
              ${enviado ? "bg-[#3ABBED]" : ""} ${error ? "bg-[#E73D5C]" : ""}
           `}
