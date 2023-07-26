@@ -114,7 +114,7 @@ const Contact: FC = () => {
           </label>
           <input
             type="email"
-            placeholder="example@domain.com"
+            placeholder="ejemplo@dominio.com"
             className={inputClassName}
             {...register("email", { required: true })}
           />
