@@ -40,7 +40,7 @@ const Header = () => {
         },
       }}
       className="
-        bg-gradient-to-r from-[#D4EBF1] via-[#3ABBED] to-[#6D2EA3] md:h-20 transition-all
+        bg-gradient-to-r from-[#D4EBF1] via-[#3ABBED] to-[#6D2EA3] md:h-20
       "
     >
       <div
