@@ -149,19 +149,35 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-row gap-12 text-black transition-all">
-              <a href="" target="_blank" className="hover:text-gray-200 w-6">
+              <a
+                href="https://www.instagram.com/conecta.tuproposito/"
+                target="_blank"
+                className="hover:text-gray-200 w-6"
+              >
                 <Instagram className="fill-black hover:fill-pink-300" />
               </a>
 
-              <a href="" target="_blank" className="hover:text-gray-200 w-6">
+              <a
+                href="https://www.facebook.com/profile.php?id=100093252828696"
+                target="_blank"
+                className="hover:text-gray-200 w-6"
+              >
                 <Facebook className="fill-black hover:fill-pink-300" />
               </a>
 
-              <a href="" target="_blank" className="hover:text-gray-200 w-6">
+              <a
+                href="https://twitter.com/ConectaTP"
+                target="_blank"
+                className="hover:text-gray-200 w-6"
+              >
                 <Twitter className="fill-black hover:fill-pink-300" />
               </a>
 
-              <a href="" target="_blank" className="hover:text-gray-200 w-6">
+              <a
+                href="https://www.linkedin.com/in/conecta-tu-propósito-7a2095266/"
+                target="_blank"
+                className="hover:text-gray-200 w-6"
+              >
                 <Linkedin className="fill-black hover:fill-pink-300" />
               </a>
             </div>
