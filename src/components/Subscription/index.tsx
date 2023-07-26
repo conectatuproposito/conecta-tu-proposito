@@ -24,12 +24,10 @@ const Subscription = () => {
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log({ res });
         setEnviado(true);
         setValue("email", "Bienvenido ahora estas conectado");
       })
       .catch((err) => {
-        console.log({ err });
         setError(true);
         setValue("email", "Algo salio mal, algo salio mal");
       });

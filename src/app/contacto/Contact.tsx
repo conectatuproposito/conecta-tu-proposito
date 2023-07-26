@@ -41,11 +41,9 @@ const Contact: FC = () => {
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log({ res });
         setEnviado(true);
       })
       .catch((err) => {
-        console.log({ err });
         setError(err);
       });
   }
