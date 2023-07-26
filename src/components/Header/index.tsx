@@ -183,6 +183,20 @@ const OtroMenu = () => (
       >
         Ejecutivo
       </Link>
+
+      <Link
+        className="hover:text-pink-300 cursor-pointer"
+        href="https://conectatuproposito.netlify.app/conectate#familia"
+      >
+        Salud en familia
+      </Link>
+      <Link
+        className="hover:text-pink-300 cursor-pointer"
+        href="https://conectatuproposito.netlify.app/conectate#ejecutivos"
+      >
+        Ejecutivo
+      </Link>
+
       <Link
         className="hover:text-pink-300 cursor-pointer"
         href="/conectate#psicoterapia"
