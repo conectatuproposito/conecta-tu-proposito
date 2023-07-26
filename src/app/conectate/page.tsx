@@ -242,12 +242,12 @@ const Article = ({
       >
         <div
           className={`flex flex-col ${
-            direction === "left" && " lg:ml-[14%] xl:ml-[14%]"
+            direction === "left" && " lg:ml-[14%] xl:ml-[12%]"
           } 
           m-5 
           md:ml-8
           lg:my-[6%] 
-          xl:my-[8%]
+          xl:my-[8%] xl:mr-4
            `}
         >
           <h3
@@ -284,6 +284,7 @@ const Article = ({
               direction === "right" ? "90deg" : "270deg"
             }, rgba(255,255,255,0) 50%, rgba(240,242,255,1) 99%), url(/${image}.png)`,
             backgroundSize: "cover",
+            backgroundPosition: direction === "right" ? "left" : "right",
           }}
         />
         <div

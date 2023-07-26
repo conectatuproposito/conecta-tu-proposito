@@ -12,9 +12,12 @@ const Button = ({ children, className, ...args }: IButton) => {
   return (
     <Link
       className={`
-        flex items-center justify-center  sm:w-[354px] h-11
+        flex items-center justify-center 
         text-white rounded-full p-2 px-6
-        bg-purple-800 hover:bg-sky-400 transition-all ${className}`}
+        bg-purple-800 hover:bg-sky-400 
+        sm:w-[300px] h-11
+        lg:w-[354px]
+        transition-all ${className}`}
       {...args}
     >
       {children}
