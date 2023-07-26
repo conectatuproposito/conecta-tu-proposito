@@ -195,7 +195,7 @@ export default function Home() {
 }
 
 const imageClassName =
-  " w-full relative hover:scale-[1.9] top-0 hover:top-[30%] card-transition";
+  " w-full relative group-hover:scale-[1.9] top-0 group-hover:top-[30%] card-transition";
 
 const Card = ({
   image,
@@ -206,29 +206,26 @@ const Card = ({
   children: React.ReactNode;
   href: string;
 }) => (
-  <div className="w-[365px] rounded-[30px] mx-auto bg-white overflow-hidden cursor-pointer">
-    <div className="h-40 overflow-hidden hover:overflow-visible">
-      <Image
-        className={imageClassName}
-        src={`/${image}.png`}
-        alt="Card 1"
-        width={500}
-        height={500}
-        priority
-      />
-    </div>
-
-    <div className="px-6 py-4">
-      {children}
-
-      <div className="text-end">
-        <Link
-          className="text-purple-700 hover:text-purple-900 font-bold"
-          href={href}
-        >
-          ver más +
-        </Link>
+  <div className="group w-[365px] rounded-[30px] mx-auto bg-white overflow-hidden cursor-pointer">
+    <Link href={href}>
+      <div className="h-40 overflow-hidden group-hover:overflow-visible">
+        <Image
+          className={imageClassName}
+          src={`/${image}.png`}
+          alt="Card 1"
+          width={500}
+          height={500}
+          priority
+        />
       </div>
-    </div>
+
+      <div className="px-5 py-4">
+        {children}
+
+        <div className="text-purple-700 hover:text-purple-900 font-bold text-end mt-1">
+          ver más +
+        </div>
+      </div>
+    </Link>
   </div>
 );
