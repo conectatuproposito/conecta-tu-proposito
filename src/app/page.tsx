@@ -157,7 +157,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-blue-200 via-blue-400 to-purple-700 w-full py-16">
+      <div className="bg-gradient-to-r from-[#D4EBF1] via-[#3ABBED] to-[#6D2EA3] w-full py-16">
         <div className="flex flex-wrap xl:grid xl:grid-cols-3 xl:max-w-screen-xl xl:w-fit xl:gap-10 m-auto p-4 xl:p-0 gap-8  ">
           <Card image="card-1" href="/conectate#familia">
             <div className="text-xl font-bold mb-2">Familia</div>
