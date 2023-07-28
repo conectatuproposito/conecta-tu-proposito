@@ -192,9 +192,7 @@ const OtroMenu = () => (
       >
         Psicoterapia
       </Link>
-      <Link className="hover:text-pink-300 cursor-pointer" href="/conectate">
-        Bootcamp
-      </Link>
+      <div className="cursor-default">Bootcamp</div>
     </div>
   </div>
 );
