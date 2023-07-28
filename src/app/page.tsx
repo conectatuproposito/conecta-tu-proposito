@@ -102,8 +102,8 @@ export default function Home() {
           persona humana.
         </div>
         <Image
-          src="/iconos.png"
-          alt="iconos"
+          src="/home-iconos.png"
+          alt="home iconos"
           width={1031}
           height={408}
           priority
@@ -147,7 +147,7 @@ export default function Home() {
           </div>
           <Image
             src="/composition.png"
-            alt="iconos"
+            alt="composition"
             width={500}
             height={500}
             priority
