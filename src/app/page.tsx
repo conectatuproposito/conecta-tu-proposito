@@ -156,7 +156,7 @@ export default function Home() {
         </div>
         <div>
           <Button href="/contacto" className="m-auto sm:w-[430px]">
-            Conoce más
+            Conecta tu propósito
           </Button>
         </div>
       </div>
