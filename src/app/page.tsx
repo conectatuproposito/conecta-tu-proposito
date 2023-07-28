@@ -39,7 +39,7 @@ export default function Home() {
             tendrás disponible en tu vida.
           </div>
           <Button href="/contacto" className="sm:w-[430px]">
-            Conectar tu propósito
+            Conecta tu propósito
           </Button>
         </div>
 
