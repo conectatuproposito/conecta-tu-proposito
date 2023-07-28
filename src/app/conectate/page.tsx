@@ -104,12 +104,12 @@ export default function Contactate() {
           sino que la sanación sea consecuencia de un proceso y un camino. Es
           importante distinguir en este proceso el camino que nos aporte una
           perspectiva de hasta dónde podemos llegar y de qué forma podemos abrir
-          el panorama para entender y comprender la dimensión de un proceso de
-          meditación que se convierte en un itinerario o camino que abarca la
+          un panorama para entender y comprender, la dimensión de un proceso de
+          meditación que se convierte en un itinerario o camino que, abarca la
           globalidad de todas las dimensiones de la persona. Más importante que
-          hablar de salud, es hablar de sanación orientada a forjar en nosotros
-          una vida saludable que contemple todas las realidades que forman parte
-          del ser, como lo son la dimensión biológica, psicológica, social y
+          hablar de salud, es hablar de sanación orientada a forjar una vida
+          saludable que, contemple todas las realidades que forman parte del
+          ser, como lo son: la dimensión bilógica, psicológica, social y
           espiritual.
         </div>
         <div className="mb-4">
@@ -137,15 +137,16 @@ export default function Contactate() {
         direction="right"
       >
         <div className="mb-4">
-          Cultivar un liderazgo transformacional y sustentable caracterizado
-          para que las organizaciones aprovechen las fortalezas y el potencial
-          de sus funcionarios, desde la promoción del capital psicológico,
-          humano y social. Esto permite a los líderes y a los liderados ampliar
-          su percepción del mundo para verse como seres humanos integrales,
-          capaces de ser instrumentos al servicio del crecimiento de la
-          organización y del logro efectivo de resultados, motivando y guiando a
-          otros para lograrlos. Se sienten responsables de su crecimiento,
-          desarrollo y felicidad en el trabajo.
+          Promover y Cultivar un liderazgo transformacional y sustentable,
+          sensible a la esencia humana en donde se reflejen y aprovechen las
+          fortalezas y el potencial de los funcionarios en las organizaciones, a
+          través de la promoción del capital psicológico, humano y social, que
+          permita a lideres y liderados ampliar la percepción del mundo para
+          proyectarse como seres humanos integrales , capaces, de ser un
+          instrumento al servicio del crecimiento de la organización, aportando
+          al logro efectivo de resultados; liderando y orientado a otros para
+          lograrlo, sintiéndose responsable de su crecimiento personal ,
+          desempeño y felicidad en el trabajo.
         </div>
         <div>
           <Button

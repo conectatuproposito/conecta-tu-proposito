@@ -135,9 +135,9 @@ export default function Home() {
               El ser humano no puede reducirse unilateralmente a una dimensión o
               a una parte de su ser, hablar del individuo, de la persona, cada
               vez está encontrando un eco mayor en todos los ámbitos de la vida,
-              no puede limitarse simplemente a una dimensión que lo caracteriza,
-              teniéndose que prestar atención a todas las realidades, como lo
-              son la dimensión biológica, psicológica, social y espiritual.
+              no puede limitarse simplemente a una dimensión que lo caracteriza.
+              Prestándole más atención a todas las realidades, como lo son la
+              dimensión biológica, psicológica, social y espiritual.
             </div>
             <div className="mt-7 text-[1.275rem] leading-[1.5rem]">
               Descubre la forma de poder, integrar y unificar todas las
