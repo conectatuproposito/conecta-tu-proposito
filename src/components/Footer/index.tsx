@@ -66,7 +66,7 @@ const Footer = () => {
                   Nosotros
                 </Link>
                 <Link href="/conectate" className=" hover:text-purple-700">
-                  Conectate
+                  Conéctate
                 </Link>
                 <Link href="/contacto" className=" hover:text-purple-700">
                   Contacto
