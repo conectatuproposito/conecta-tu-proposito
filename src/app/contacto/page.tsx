@@ -48,7 +48,7 @@ export default function Contacto() {
 
       <div className="text-center relative mt-12 md:mt-0  lg:-top-24">
         <Image
-          src="/isotipo.png"
+          src="/isotipo-ctp.png"
           alt="isotipo"
           width={116}
           height={96}

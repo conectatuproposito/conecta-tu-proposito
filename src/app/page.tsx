@@ -73,7 +73,7 @@ export default function Home() {
           xl:max-w-screen-xl"
       >
         <Image
-          src="/isotipo.png"
+          src="/isotipo-ctp.png"
           alt="isotipo"
           width={116}
           height={96}

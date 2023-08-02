@@ -161,7 +161,7 @@ export default function Contactate() {
       <div>
         <div>
           <Image
-            src="/isotipo.png"
+            src="/isotipo-ctp.png"
             alt="isotipo"
             width={96}
             height={96}

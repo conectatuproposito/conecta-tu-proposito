@@ -60,7 +60,7 @@ export default function Nosotros() {
         >
           <div className="text-center">
             <Image
-              src="/isotipo.png"
+              src="/isotipo-ctp.png"
               alt="isotipo"
               width={96}
               height={96}
