@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-2 md:gap-14">
+          <div className="grid grid-cols-2 xl:grid-cols-3 gap-2 md:gap-4 xl:gap-0">
             <div>
               <div className="text-md text-purple-700 uppercase">Website</div>
               <div className="flex flex-col">
@@ -92,10 +92,31 @@ const Footer = () => {
               >
                 IOpener Institute
               </a>
+
+              <a
+                href="https://www.instagram.com/nutriologopablosalda/"
+                className=" hover:text-purple-700"
+              >
+                @nutriologopablosalda
+              </a>
+
+              <a
+                href="https://www.instagram.com/peninsulacol/"
+                className=" hover:text-purple-700"
+              >
+                @peninsulacol
+              </a>
+
+              <a
+                href="https://www.instagram.com/medicinadeportivamedellin/"
+                className=" hover:text-purple-700"
+              >
+                @medicinadeportivamedellin
+              </a>
             </div>
           </div>
 
-          <div className="text-center md:text-left">
+          <div className=" md:text-left">
             <div className="text-md text-purple-700 uppercase">Contacto</div>
             <div className="flex flex-col gap-1">
               <div className="flex gap-2 items-center">
